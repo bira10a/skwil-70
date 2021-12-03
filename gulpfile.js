@@ -17,7 +17,9 @@ function browsersync() {
 }
 
 function styles() {
-  return src('app/scss/style.scss')
+  return src([
+    'app/scss/style.scss'
+  ])
     .pipe(scss({outputStyle: 'expanded'}))
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
@@ -31,6 +33,7 @@ function styles() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
+    'node_modules/slick-carousel/slick/slick.js',
     'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))
@@ -67,8 +70,8 @@ function cleanDist() {
 
 function watching() {
   watch(['app/scss/**/*.scss'], styles);
-  watch(['app/js/**/*.js', '!app/main.min.js'], scripts)
-  watch(['app/**/*.html']).on('change', browserSync.reload)
+  // watch(['app/js/**/*.js', '!app/main.min.js'], scripts);
+  watch(['app/**/*.html']).on('change', browserSync.reload);
 }
 
 exports.styles = styles;

@@ -4,10 +4,433 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ФРЕШоК</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <nav class="menu">
+          <ul class="menu__connection">
+            <li class="menu__connection-item">
+              <a class="menu__connection-link" href="tel:" aria-label="адрес и время доставки">АДРЕС И ВРЕМЯ ДОСТАВКИ
+              </a> 
+            </li>
+            
+            <li class="menu__connection-item">
+              <a class="menu__connection-link" href="tel:+7907288365" aria-label="телефон горячей линии">ГОРЯЧАЯ ЛИНИЯ 24/7
+              </a>
+            </li>
+          </ul>
+
+           <ul class="menu__list">
+             <li class="menu__list-item">
+               <a class="menu__list-link" href="#">ДОСТАВКА</a>
+             </li>
+
+             <li class="menu__list-item">
+              <a class="menu__list-link" href="#">О НАС</a>
+             </li>
+
+             <li class="menu__list-item">
+              <a class="menu__list-link" href="#">НОВОСТИ</a>
+             </li>
+           </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="header__centr">
+      <div class="container">
+        <div class="header__centr-inner">
+          <a class="logo" href="">
+            <img class="logo__img" src="images/logo.svg" alt="логотип">
+          </a>
+
+            <div class="header__centr-products">
+              <span class="header__centr-catalog">
+                Каталог продуктов
+              </span>
+              
+              <ul class="header__centr-items">
+                <li class="header__centr-item">
+                  <a class="header__centr-link" href="#">Овощи и фрукты</a>
+                </li>
+
+              <li class="header__centr-item">
+                <a class="header__centr-link" href="#">Бакалея</a>
+              </li>
+              
+               <li class="header__centr-item">
+                <a class="header__centr-link" href="#">Молочные продукты</a>
+              </li> 
+              
+              <li class="header__centr-item">
+                 <a class="header__centr-link" href="#">Хлеб</a>
+                </li>
+                
+                <li class="header__centr-item">
+                  <a class="header__centr-link" href="#">Мясо</a>
+                </li>
+                
+                <li class="header__centr-item">
+                  <a class="header__centr-link" href="#">Колбаса</a>
+                </li>
+                
+              <li class="header__centr-item">
+                <a class="header__centr-link" href="#">Рыба</a>
+              </li>
+              
+              <li class="header__centr-item">
+                <a class="header__centr-link" href="#">Алкоголь</a>
+              </li> 
+              
+              <li class="header__centr-item">
+                <a class="header__centr-link" href="#">Напитки</a>
+              </li>  
+              
+              <li class="header__centr-item">
+                <a class="header__centr-link" href="#">Торты</a>
+              </li> 
+              
+              <li class="header__centr-item">
+                <a class="header__centr-link" href="#">Мясо</a>
+              </li>
+              
+              <li class="header__centr-item">
+                <a class="header__centr-link" href="#">Чай, кофе</a>
+              </li>            
+            </ul>
+          </div>
+            
+          
+          
+          <form class="form" action="">
+            <label class="form__label" for="message">
+              <textarea class="form__textarea" id="message" placeholder="Найти в магазине ..." name="message" required></textarea>
+            </label>
+            
+            
+            <button class="form__btn btn" type="submit">ПОИСК</button>
+          </form>
+          
+          <div class="user-nav">
+            <ul class="user-nav__items">
+              <li class="user-nav__item">
+                <a href="#" class="user-nav__link">
+                  <img class="user-nav__link-img" src="images/icon/icon-user.svg" alt="">
+                </a>
+              </li>
+
+              <li class="user-nav__item">
+                <a href="#" class="user-nav__link">
+                  <img class="user-nav__link-img" src="images/icon/icon-heart.svg" alt="">
+                  <div class="user-nav__num">12</div>
+                </a>
+              </li>
+
+              <li class="user-nav__item">
+                <a href="#" class="user-nav__link">
+                  <img class="user-nav__link-img" src="images/icon/icon-cart.svg" alt="">
+                  <div class="user-nav__num">12</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="slider">
+      <h1 class="sr-only">Главные акции и скидки</h1>
+      
+      <!-- <div class="container"> -->
+        <ul class="slider__items" >
+          <li class="slider__item" style="background-image: url('images/bg__img/carrots-bg.jpg');">
+            <div class="slider__container container">
+
+              <div class="slider__itelol">
+                
+                <span class="slider__item-title">
+                  СВЕЖАЧОК ВАМ в ХАТУ
+                </span>
+                
+                <span class="slider__item-title">
+                Скидка -50%
+                </span>
+              
+                <span class="slider__item-text">
+                Только с 7 по 13 июля скидка на сезонные фрукты и овощи до 50%. Торопитесь!
+               </span>
+              
+                <a class="slider__item-link">
+                  Купить сейчас
+                </a>
+              </div>
+            </div>
+          </li>
+          
+          <li class="slider__item" style="background-image: url('images/bg__img/tomatoes-bg.jpg');">
+            <div class="slider__container container">
+
+              <div class="slider__itelol">
+                
+                <span class="slider__item-title">
+                  НАКРУТИ СЕБЕ ТОМАТОВ
+                </span>
+                
+                <span class="slider__item-title">
+                АКЦИЯ: 3 кг по цене 1
+                </span>
+
+                <span class="slider__item-text">
+                Только с 12 по 15 июля скидка на домашние помидорчики
+                </span>
+              
+                <a class="slider__item-link">
+                  Купить сейчас
+                </a>
+              </div>
+            </div>
+          </li>
+          
+          <li class="slider__item" style="background-image: url('images/bg__img/salad-bg.jpg');">
+            <div class="slider__container container">
+
+              <div class="slider__itelol">
+                
+                <span class="slider__item-title">
+                  Пусть остальные
+                позеленеют от зависти
+                </span>
+              
+                <span class="slider__item-title">
+                Распродажа зелени
+                </span>
+
+                <a class="slider__item-link">
+                  Купить сейчас
+                </a>
+             </div>
+            </div>
+          </li>
+          
+          
+
+        </ul>
+      <!-- </div> -->
+    </section>
+
+    <section class="advantages">
+      <div class="container">
+        <h2 class="sr-only">Преимущества заказа пролуктов у нас</h2>
+
+        <ul class="advantages__items">
+          <li class="advantages__item advantages__item--scooter">
+            <span class="advantages__title">Бесплатная доставка</span>    
+
+            <span class="advantages__text">Для заказов на сумму от 500 ₽</span>
+          </li>
+          
+          <li class="advantages__item advantages__item--product">
+            <span class="advantages__title">Возврат товара</span>
+
+            <span class="advantages__text">Если товары были испорчены</span>
+          </li>
+
+          <li class="advantages__item advantages__item--24-hours">
+            <span class="advantages__title">Поддержка 24/7</span>
+
+            <span class="advantages__text">Лучшие операторы</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <h2 class="products__title title">
+          Топовые товары
+        </h2>
+
+        <ul class="products__list filters">
+          <li class="filters__item">
+            <button class="filters__btn">
+              Все товары
+            </button>
+          </li>
+
+          <li class="filters__item">
+            <button class="filters__btn">
+              Фрукты              
+            </button>
+          </li>
+
+          <li class="filters__item">
+            <button class="filters__btn">
+              ОВОЩИ
+            </button>
+          </li>
+
+          <li class="filters__item">
+            <button class="filters__btn">
+              Напитки
+            </button>
+          </li>
+
+          <li class="filters__item">
+            <button class="filters__btn">
+              БАКАЛЕЯ
+            </button>
+          </li>
+        </ul>
+
+        <article class="product-card">
+          <ul class="product-card__content">
+            <li class="product-card__item">
+              <a class="product-card__link" href="#">
+                <img src="images/filters__img/pineapple.jpg" alt="" class="product-card__img">
+              </a>
+
+              <span class="product-card__text">
+              Ананас, 1кг
+              </span>
+            
+              <div class="product-card__price">
+                <div class="product-card__price-list">
+                  <span class="product-card__price-old">
+                  1999 ₽
+                  </span>
+  
+                  <span class="product-card__price-new">
+                  999 ₽
+                  </span>
+                </div>
+
+                <button class="product-card__price-basket">
+                  <img class="product-card__price-img" src="images/icon/icon-cart.svg" width="" height="" alt="">
+                </button>
+              </div>
+            </li>
+
+            <li class="product-card__item">
+              <a class="product-card__link" href="#">
+                <img src="images/filters__img/lemon.jpg" alt="" class="product-card__img">
+              </a>
+            
+              <span class="product-card__text">
+              Лимон, 1кг
+              </span>
+
+              <div class="product-card__price">
+                <div class="product-card__price-list">
+                  <span class="product-card__price-old">
+                    
+                  </span>
+              
+                  <span class="product-card__price-new">
+                    199 ₽
+                  </span>
+                </div>
+              
+                <button class="product-card__price-basket">
+                  <img class="product-card__price-img" src="images/icon/icon-cart.svg" width="" height="" alt="">
+                </button>
+              </div>
+            </li>
+
+            <li class="product-card__item">
+              <a class="product-card__link" href="#">
+                <img src="images/filters__img/dragon-fruit.jpg" alt="" class="product-card__img">
+              </a>
+
+              <span class="product-card__text">
+              Питахайя красная с белой мякотью, 1шт
+              </span>
+
+              <div class="product-card__price">
+                <div class="product-card__price-list">
+                  <span class="product-card__price-old">
+                    
+                  </span>
+              
+                  <span class="product-card__price-new">
+                    1019 ₽
+                  </span>
+                </div>
+              
+                <button class="product-card__price-basket">
+                  <img class="product-card__price-img" src="images/icon/icon-cart.svg" width="" height="" alt="">
+                </button>
+              </div>
+            </li>
+
+            <li class="product-card__item">
+              <a class="product-card__link" href="#">
+                <img src="images/filters__img/ketchup.jpg" alt="" class="product-card__img">
+              </a>
+            
+              <span class="product-card__text">
+              Кетчуп томатный детский органический Bio-Zentrale 500мл, 1 шт
+              </span>
+            </li>
+          
+            <li class="product-card__item">
+              <a class="product-card__link" href="#">
+                <img src="images/filters__img/carrot.jpg" alt="" class="product-card__img">
+              </a>
+            
+              <span class="product-card__text">
+              Морковь молодая с бабушкиной грядки, 1кг
+              </span>
+            </li>
+
+            <li class="product-card__item">
+              <a class="product-card__link" href="#">
+                <img src="images/filters__img/juice.jpg" alt="" class="product-card__img">
+              </a>
+            
+              <span class="product-card__text">
+              Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн...
+              </span>
+            </li>
+
+            <li class="product-card__item">
+              <a class="product-card__link" href="#">
+                <img src="images/filters__img/coffee.jpg" alt="" class="product-card__img">
+              </a>
+            
+              <span class="product-card__text">
+              Кофе с коноплей органический Caffé Salomoni 250г
+              </span>
+            </li>
+          
+            <li class="product-card__item">
+              <a class="product-card__link" href="#">
+                <img src="images/filters__img/paprik.jpg" alt="" class="product-card__img">
+              </a>
+
+              <span class="product-card__text">
+              Перец оранжевый, 1кг
+              </span>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    
+
+  </main>
+
+
 
   <script src="js/main.min.js"></script>
 </body>
