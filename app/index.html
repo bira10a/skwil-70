@@ -14,12 +14,22 @@
         <nav class="menu">
           <ul class="menu__connection">
             <li class="menu__connection-item">
-              <a class="menu__connection-link" href="tel:" aria-label="адрес и время доставки">АДРЕС И ВРЕМЯ ДОСТАВКИ
+              <a class="menu__connection-link" href="tel:" aria-label="адрес и время доставки">
+                <svg class="icon-car">
+                  <use xlink:href="images/sprite.svg#icon-car"></use>
+                </svg>
+
+                АДРЕС И ВРЕМЯ ДОСТАВКИ
               </a> 
             </li>
             
             <li class="menu__connection-item">
-              <a class="menu__connection-link" href="tel:+7907288365" aria-label="телефон горячей линии">ГОРЯЧАЯ ЛИНИЯ 24/7
+              <a class="menu__connection-link" href="tel:+7907288365" aria-label="телефон горячей линии">
+                <svg class="icon-tel">
+                  <use xlink:href="images/sprite.svg#icon-tel"></use>
+                </svg>
+
+                ГОРЯЧАЯ ЛИНИЯ 24/7
               </a>
             </li>
           </ul>
@@ -44,7 +54,7 @@
     <div class="header__centr">
       <div class="container">
         <div class="header__centr-inner">
-          <a class="logo" href="">
+          <a class="header__centr-logo" href="">
             <img class="logo__img" src="images/logo.svg" alt="логотип">
           </a>
 
@@ -103,11 +113,16 @@
               </li>            
             </ul>
           </div>
-            
-          
-          
+                     
           <form class="form" action="">
+            
             <label class="form__label" for="message">
+              <button class="form__label-btn-search" type="button">
+                <svg class="icon-search">
+                  <use xlink:href="images/sprite.svg#icon-search"></use>
+                </svg>
+              </button>
+
               <textarea class="form__textarea" id="message" placeholder="Найти в магазине ..." name="message" required></textarea>
             </label>
             
@@ -117,19 +132,29 @@
           <div class="user-nav">
             <ul class="user-nav__items">
               <li class="user-nav__item">
-                <a class="user-nav__link" href="#" style="background-image: url('images/icon/icon-user.svg');"></a>
+                <a class="user-nav__link" href="#">
+                  <svg class="icon-user">
+                    <use xlink:href="images/sprite.svg#icon-user"></use>
+                  </svg>
+                </a>
               </li>
 
               <li class="user-nav__item">
                 <a href="#" class="user-nav__link">
-                  <img class="user-nav__link-img" src="images/icon/icon-heart.svg" alt="">
+                  <svg class="icon-heart">
+                    <use xlink:href="images/sprite.svg#icon-heart"></use>
+                  </svg>
+
                   <div class="user-nav__num">12</div>
                 </a>
               </li>
 
               <li class="user-nav__item">
                 <a href="#" class="user-nav__link">
-                  <img class="user-nav__link-img" src="images/icon/icon-cart.svg" alt="">
+                  <svg class="icon-cart">
+                    <use xlink:href="images/sprite.svg#icon-cart"></use>
+                  </svg>
+
                   <div class="user-nav__num">12</div>
                 </a>
               </li>
@@ -296,7 +321,7 @@
                 <img src="images/filters__img/pineapple.jpg" alt="" class="product-card__img">
               </a>
 
-              <span class="product-card__text">
+              <span class="product-card__text product-card__text--pineapple">
               Ананас, 1кг
               </span>
             
@@ -315,6 +340,16 @@
                   <img class="product-card__price-img" src="images/icon/icon-cart.svg" width="" height="" alt="">
                 </button>
               </div>
+
+              <button class="product-card__btn-heart" style="background-image: url('images/icon-heart.svg');" type="button"></button>
+
+              <span class="product-card__badges-new badges">
+                НОВИНКА
+              </span>
+
+              <span class="product-card__badges-promotion badges">
+                -50%
+              </span>
             </li>
 
             <li class="product-card__item">
@@ -322,7 +357,7 @@
                 <img src="images/filters__img/lemon.jpg" alt="" class="product-card__img">
               </a>
             
-              <span class="product-card__text">
+              <span class="product-card__text product-card__text--lemon">
               Лимон, 1кг
               </span>
 
@@ -341,6 +376,8 @@
                   <img class="product-card__price-img" src="images/icon/icon-cart.svg" width="" height="" alt="">
                 </button>
               </div>
+
+              <button class="product-card__btn-heart" style="background-image: url('images/icon-heart.svg');" type="button"></button>
             </li>
 
             <li class="product-card__item">
@@ -348,7 +385,7 @@
                 <img src="images/filters__img/dragon-fruit.jpg" alt="" class="product-card__img">
               </a>
 
-              <span class="product-card__text">
+              <span class="product-card__text product-card__text--dragon-fruit">
               Питахайя красная с белой мякотью, 1шт
               </span>
 
@@ -367,6 +404,12 @@
                   <img class="product-card__price-img" src="images/icon/icon-cart.svg" width="" height="" alt="">
                 </button>
               </div>
+
+              <button class="product-card__btn-heart" style="background-image: url('images/icon-heart.svg');" type="button"></button>
+              
+              <span class="product-card__badges-hit badges">
+                ХИТ
+              </span>
             </li>
 
             <li class="product-card__item">
@@ -374,7 +417,7 @@
                 <img src="images/filters__img/ketchup.jpg" alt="" class="product-card__img">
               </a>
             
-              <span class="product-card__text">
+              <span class="product-card__text product-card__text--ketchup">
               Кетчуп томатный детский органический Bio-Zentrale 500мл, 1 шт
               </span>
 
@@ -393,6 +436,8 @@
                   <img class="product-card__price-img" src="images/icon/icon-cart.svg" width="" height="" alt="">
                 </button>
               </div>
+
+              <button class="product-card__btn-heart" style="background-image: url('images/icon-heart.svg');" type="button"></button>
             </li>
           
             <li class="product-card__item">
@@ -400,7 +445,7 @@
                 <img src="images/filters__img/carrot.jpg" alt="" class="product-card__img">
               </a>
             
-              <span class="product-card__text">
+              <span class="product-card__text product-card__text--carrot">
               Морковь молодая с бабушкиной грядки, 1кг
               </span>
 
@@ -419,6 +464,12 @@
                   <img class="product-card__price-img" src="images/icon/icon-cart.svg" width="" height="" alt="">
                 </button>
               </div>
+
+              <button class="product-card__btn-heart" style="background-image: url('images/icon-heart.svg');" type="button"></button>
+              
+              <span class="product-card__badges-hit badges">
+                ХИТ
+              </span>
             </li>
 
             <li class="product-card__item">
@@ -426,7 +477,7 @@
                 <img src="images/filters__img/juice.jpg" alt="" class="product-card__img">
               </a>
             
-              <span class="product-card__text">
+              <span class="product-card__text product-card__text--juice">
               Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн...
               </span>
 
@@ -445,6 +496,12 @@
                   <img class="product-card__price-img" src="images/icon/icon-cart.svg" width="" height="" alt="">
                 </button>
               </div>
+
+              <button class="product-card__btn-heart" style="background-image: url('images/icon-heart.svg');" type="button"></button>
+              
+              <span class="product-card__badges-promotion badges" style="top: 12px">
+                -30%
+              </span>
             </li>
 
             <li class="product-card__item">
@@ -452,7 +509,7 @@
                 <img src="images/filters__img/coffee.jpg" alt="" class="product-card__img">
               </a>
             
-              <span class="product-card__text">
+              <span class="product-card__text product-card__text--coffee">
               Кофе с коноплей органический Caffé Salomoni 250г
               </span>
 
@@ -471,6 +528,12 @@
                   <img class="product-card__price-img" src="images/icon/icon-cart.svg" width="" height="" alt="">
                 </button>
               </div>
+
+              <button class="product-card__btn-heart" style="background-image: url('images/icon-heart.svg');" type="button"></button>
+              
+              <span class="product-card__badges-new badges">
+                НОВИНКА
+              </span>
             </li>
           
             <li class="product-card__item">
@@ -478,7 +541,7 @@
                 <img src="images/filters__img/paprik.jpg" alt="" class="product-card__img">
               </a>
 
-              <span class="product-card__text">
+              <span class="product-card__text product-card__text--paprik">
               Перец оранжевый, 1кг
               </span>
 
@@ -497,6 +560,12 @@
                   <img class="product-card__price-img" src="images/icon/icon-cart.svg" width="" height="" alt="">
                 </button>
               </div>
+
+              <button class="product-card__btn-heart" style="background-image: url('images/icon-heart.svg');" type="button"></button>
+              
+              <span class="product-card__badges-new badges">
+                НОВИНКА
+              </span>
             </li>
           </ul>
 
@@ -506,27 +575,24 @@
       </div>
     </section>
 
-    
-
   </main>
 
   <footer class="footer">
     <div class="container">
+      <a class="footer__logo" href="">
+        <img class="logo__img" src="images/logo.svg" alt="логотип">
+      </a>
+      
       <div class="footer__inner">
         <div class="footer__left">
-          <a class="footer__logo logo" href="">
-            <img class="logo__img" src="images/logo.svg" alt="логотип">
-          </a>
-  
-          <!-- <span class="footer__text">Следите за нашими акциями</span> -->
+          <span class="footer__text">Следите за нашими акциями</span>
   
           <form class="footer__form" action="">
             <label class="footer__form-label" for="message">
-              Следите за нашими акциями
-            </label>
               <textarea class="footer__form-textarea" id="message" placeholder="email@email.com" name="message" required></textarea>
+            </label>
         
-            <button class="form__btn btn" type="submit">ПОИСК</button>
+            <button class="footer__form-btn" type="submit">ПОДПИСАТЬСЯ</button>
           </form>
         </div>
   
@@ -582,35 +648,48 @@
           </ul>
         </div>
 
-          <address class="contacts__left">
-            <ul class="contacts__data">
-              <li class="contacts__links">
-                <a class="contacts__link" href="tel:+7907288365" aria-label="ссылка для звонка нам на телефон">Горячая линия+7 907 288 365</a>
-              </li>
-          
-              <li class="contacts__links">
-                <a class="contacts__link contacts__link--email" href="mailto:frontend-monster@email.com"
-                  aria-label="ссылка для отправки электронного письма на нашу электронную почту">Санкт-Петербург, ул. Ленина, 1</a>
-              </li>
-            </ul>
-          
-            <ul class="contacts__web">
-              <li class="contacts__web-link">
-                <a class="contacts__networks" style=" background-image: url('images/social-networks/instagram.svg');"
-                  href="https://www.instagram.com/account" target="_blank" aria-label="ссылка на нашу страничку в instagram"></a>
-              </li>
-          
-              <li class="contacts__web-link">
-                <a class="contacts__networks" style="background-image: url('images/social-networks/facebook.svg');"
+          <address class="footer__address">
+            <a class="footer__address-link" href="tel:+7907288365" aria-label="ссылка для звонка нам на телефон">Горячая линия+7 907 288 365</a>
+            
+            <span class="footer__address-street">Санкт-Петербург, ул. Ленина, 1</span>
+         
+            <ul class="footer__address-web">
+              <li class="footer__address-link">
+                <a class="footer__address-networks" style="background-image: url('images/icon/social-icon/facebook.svg');"
                   href="https://www.facebook.com/account" target="_blank" aria-label="ссылка на нашу страничку в facebook"></a>
               </li>
           
-              <li class="contacts__web-link">
-                <a class="contacts__networks" style="background-image: url('images/social-networks/telegram.svg');"
-                  href="https://twitter.com/account" target="_blank" aria-label="ссылка на нашу страничку в telegram"></a>
+              <li class="footer__address-link">
+                <a class="footer__address-networks" style="background-image: url('images/icon/social-icon/youtube.svg');"
+                  href="https://youtube.com/account" target="_blank" aria-label="ссылка на нашу страничку в youtube"></a>
+              </li>
+
+              <li class="footer__address-link">
+                <a class="footer__address-networks" style="background-image: url('images/icon/social-icon/telegram.svg');"
+                  href="https://telegram.com/account" target="_blank" aria-label="ссылка на нашу страничку в telegram"></a>
+              </li>
+
+              <li class="footer__address-link">
+                <a class="footer__address-networks" style=" background-image: url('images/icon/social-icon/instagram.svg');"
+                  href="https://www.instagram.com/account" target="_blank" aria-label="ссылка на нашу страничку в instagram"></a>
               </li>
             </ul>
           </address>
+      </div>
+    </div>
+
+    <span class="footer__border"></span>
+
+    <div class="container">
+      <div class="footer__bottom">
+        <span class="footer__bottom-copy">
+          © 2021 ФРЕШОК
+        </span>
+
+        <div class="footer__bottom-accept">
+          <img class="footer__bottom-img" src="images/visa.svg" alt="принимаем оплату по карте VISA">
+          <img class="footer__bottom-img" src="images/mastercard.svg" alt="принимаем оплату по карте MasterCard">
+        </div>
       </div>
     </div>
   </footer>
