@@ -142,7 +142,7 @@
               <li class="user-nav__item">
                 <a href="#" class="user-nav__link">
                   <svg class="icon-heart">
-                    <use xlink:href="images/sprite.svg#icon-heart"></use>
+                    <use xlink:href="images/sprite.svg#icon-heart-nav"></use>
                   </svg>
 
                   <div class="user-nav__num">12</div>
@@ -161,9 +161,6 @@
             </ul>
           </div>
 
-
-
-
         </div>
       </div>
     </div>
@@ -173,12 +170,11 @@
     <section class="slider">
       <h1 class="sr-only">Главные акции и скидки</h1>
       
-      <!-- <div class="container"> -->
         <ul class="slider__items" >
           <li class="slider__item" style="background-image: url('images/bg__img/carrots-bg.jpg');">
             <div class="slider__container container">
 
-              <div class="slider__itelol">
+              <div class="slider__item-inner">
                 
                 <span class="slider__item-title">
                   СВЕЖАЧОК ВАМ в ХАТУ
@@ -202,7 +198,7 @@
           <li class="slider__item" style="background-image: url('images/bg__img/tomatoes-bg.jpg');">
             <div class="slider__container container">
 
-              <div class="slider__itelol">
+              <div class="slider__item-inner">
                 
                 <span class="slider__item-title">
                   НАКРУТИ СЕБЕ ТОМАТОВ
@@ -226,7 +222,7 @@
           <li class="slider__item" style="background-image: url('images/bg__img/salad-bg.jpg');">
             <div class="slider__container container">
 
-              <div class="slider__itelol">
+              <div class="slider__item-inner">
                 
                 <span class="slider__item-title">
                   Пусть остальные
@@ -243,11 +239,7 @@
              </div>
             </div>
           </li>
-          
-          
-
         </ul>
-      <!-- </div> -->
     </section>
 
     <section class="advantages">
@@ -284,31 +276,31 @@
 
         <ul class="products__list filters">
           <li class="filters__item">
-            <button class="filters__btn">
+            <button class="filters__btn" type="button" data-filter="all">
               Все товары
             </button>
           </li>
 
           <li class="filters__item">
-            <button class="filters__btn">
+            <button class="filters__btn" type="button" data-filter=".category-a">
               Фрукты              
             </button>
           </li>
 
           <li class="filters__item">
-            <button class="filters__btn">
+            <button class="filters__btn" type="button" data-filter=".category-b">
               ОВОЩИ
             </button>
           </li>
 
           <li class="filters__item">
-            <button class="filters__btn">
+            <button class="filters__btn" type="button" data-filter=".category-c">
               Напитки
             </button>
           </li>
 
           <li class="filters__item">
-            <button class="filters__btn">
+            <button class="filters__btn" type="button" data-filter=".category-d">
               БАКАЛЕЯ
             </button>
           </li>
@@ -316,9 +308,9 @@
 
         <article class="product-card">
           <ul class="product-card__content">
-            <li class="product-card__item">
-              <a class="product-card__link" href="#">
-                <img src="images/filters__img/pineapple.jpg" alt="" class="product-card__img">
+            <li class="product-card__item" mix category-a>
+              <a class="product-card__link" data-fancybox="images" data-width="2048" data-height="1365" data-caption="My caption" href="#">
+                <img class="product-card__img" src="images/filters__img/pineapple.jpg" alt="ананас">
               </a>
 
               <span class="product-card__text product-card__text--pineapple">
@@ -341,7 +333,11 @@
                 </button>
               </div>
 
-              <button class="product-card__btn-heart" style="background-image: url('images/icon-heart.svg');" type="button"></button>
+              <button class="product-card__btn-heart" type="button">
+                <svg class="icon-heart">
+                  <use xlink:href="images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
 
               <span class="product-card__badges-new badges">
                 НОВИНКА
@@ -352,9 +348,9 @@
               </span>
             </li>
 
-            <li class="product-card__item">
-              <a class="product-card__link" href="#">
-                <img src="images/filters__img/lemon.jpg" alt="" class="product-card__img">
+            <li class="product-card__item" mix category-a>
+              <a class="product-card__link" data-fancybox="images" data-width="2048" data-height="1365" data-caption="My caption" href="#">
+                <img class="product-card__img" src="images/filters__img/lemon.jpg" alt="лемон">
               </a>
             
               <span class="product-card__text product-card__text--lemon">
@@ -363,10 +359,6 @@
 
               <div class="product-card__price">
                 <div class="product-card__price-list">
-                  <span class="product-card__price-old">
-                    
-                  </span>
-              
                   <span class="product-card__price-new">
                     199 ₽
                   </span>
@@ -377,12 +369,16 @@
                 </button>
               </div>
 
-              <button class="product-card__btn-heart" style="background-image: url('images/icon-heart.svg');" type="button"></button>
+              <button class="product-card__btn-heart" type="button">
+                <svg class="icon-heart">
+                  <use xlink:href="images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
             </li>
 
-            <li class="product-card__item">
-              <a class="product-card__link" href="#">
-                <img src="images/filters__img/dragon-fruit.jpg" alt="" class="product-card__img">
+            <li class="product-card__item" mix category-a>
+              <a class="product-card__link" data-fancybox="images" data-width="2048" data-height="1365" data-caption="My caption" href="#">
+                <img class="product-card__img product-card__img--dragon-fruit" src="images/filters__img/dragon-fruit.jpg" alt="драконий фрукт">
               </a>
 
               <span class="product-card__text product-card__text--dragon-fruit">
@@ -391,10 +387,6 @@
 
               <div class="product-card__price">
                 <div class="product-card__price-list">
-                  <span class="product-card__price-old">
-                    
-                  </span>
-              
                   <span class="product-card__price-new">
                     1019 ₽
                   </span>
@@ -405,16 +397,20 @@
                 </button>
               </div>
 
-              <button class="product-card__btn-heart" style="background-image: url('images/icon-heart.svg');" type="button"></button>
+              <button class="product-card__btn-heart" type="button">
+                <svg class="icon-heart">
+                  <use xlink:href="images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
               
               <span class="product-card__badges-hit badges">
                 ХИТ
               </span>
             </li>
 
-            <li class="product-card__item">
-              <a class="product-card__link" href="#">
-                <img src="images/filters__img/ketchup.jpg" alt="" class="product-card__img">
+            <li class="product-card__item" mix category-d>
+              <a class="product-card__link" data-fancybox="images" data-width="2048" data-height="1365" data-caption="My caption" href="#">
+                <img class="product-card__img" src="images/filters__img/ketchup.jpg" alt="кетчуп">
               </a>
             
               <span class="product-card__text product-card__text--ketchup">
@@ -423,10 +419,6 @@
 
               <div class="product-card__price">
                 <div class="product-card__price-list">
-                  <span class="product-card__price-old">
-              
-                  </span>
-              
                   <span class="product-card__price-new">
                     600 ₽
                   </span>
@@ -437,12 +429,16 @@
                 </button>
               </div>
 
-              <button class="product-card__btn-heart" style="background-image: url('images/icon-heart.svg');" type="button"></button>
+              <button class="product-card__btn-heart" type="button">
+                <svg class="icon-heart">
+                  <use xlink:href="images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
             </li>
           
-            <li class="product-card__item">
-              <a class="product-card__link" href="#">
-                <img src="images/filters__img/carrot.jpg" alt="" class="product-card__img">
+            <li class="product-card__item" mix category-b>
+              <a class="product-card__link" data-fancybox="images" data-width="2048" data-height="1365" data-caption="My caption" href="#">
+                <img class="product-card__img" src="images/filters__img/carrot.jpg" alt="морковка">
               </a>
             
               <span class="product-card__text product-card__text--carrot">
@@ -451,10 +447,6 @@
 
               <div class="product-card__price">
                 <div class="product-card__price-list">
-                  <span class="product-card__price-old">
-              
-                  </span>
-              
                   <span class="product-card__price-new">
                     49 ₽
                   </span>
@@ -465,16 +457,20 @@
                 </button>
               </div>
 
-              <button class="product-card__btn-heart" style="background-image: url('images/icon-heart.svg');" type="button"></button>
+              <button class="product-card__btn-heart" type="button">
+                <svg class="icon-heart">
+                  <use xlink:href="images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
               
               <span class="product-card__badges-hit badges">
                 ХИТ
               </span>
             </li>
 
-            <li class="product-card__item">
-              <a class="product-card__link" href="#">
-                <img src="images/filters__img/juice.jpg" alt="" class="product-card__img">
+            <li class="product-card__item" mix category-c>
+              <a class="product-card__link" data-fancybox="images" data-width="2048" data-height="1365" data-caption="My caption" href="#">
+                <img class="product-card__img product-card__img--juice" src="images/filters__img/juice.jpg" alt="сок">
               </a>
             
               <span class="product-card__text product-card__text--juice">
@@ -497,16 +493,20 @@
                 </button>
               </div>
 
-              <button class="product-card__btn-heart" style="background-image: url('images/icon-heart.svg');" type="button"></button>
+              <button class="product-card__btn-heart" type="button">
+                <svg class="icon-heart">
+                  <use xlink:href="images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
               
               <span class="product-card__badges-promotion badges" style="top: 12px">
                 -30%
               </span>
             </li>
 
-            <li class="product-card__item">
-              <a class="product-card__link" href="#">
-                <img src="images/filters__img/coffee.jpg" alt="" class="product-card__img">
+            <li class="product-card__item" mix category-d>
+              <a class="product-card__link" data-fancybox="images" data-width="2048" data-height="1365" data-caption="My caption" href="#">
+                <img class="product-card__img" src="images/filters__img/coffee.jpg" alt="кофе">
               </a>
             
               <span class="product-card__text product-card__text--coffee">
@@ -515,10 +515,6 @@
 
               <div class="product-card__price">
                 <div class="product-card__price-list">
-                  <span class="product-card__price-old">
-              
-                  </span>
-              
                   <span class="product-card__price-new">
                     877 ₽
                   </span>
@@ -529,16 +525,20 @@
                 </button>
               </div>
 
-              <button class="product-card__btn-heart" style="background-image: url('images/icon-heart.svg');" type="button"></button>
+              <button class="product-card__btn-heart" type="button">
+                <svg class="icon-heart">
+                  <use xlink:href="images/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
               
               <span class="product-card__badges-new badges">
                 НОВИНКА
               </span>
             </li>
           
-            <li class="product-card__item">
-              <a class="product-card__link" href="#">
-                <img src="images/filters__img/paprik.jpg" alt="" class="product-card__img">
+            <li class="product-card__item" mix category-b>
+              <a class="product-card__link" data-fancybox="images" data-width="2048" data-height="1365" data-caption="My caption" href="#">
+                <img class="product-card__img" src="images/filters__img/paprik.jpg" alt="паприка">
               </a>
 
               <span class="product-card__text product-card__text--paprik">
@@ -547,10 +547,6 @@
 
               <div class="product-card__price">
                 <div class="product-card__price-list">
-                  <span class="product-card__price-old">
-              
-                  </span>
-              
                   <span class="product-card__price-new">
                     349 ₽
                   </span>
@@ -579,7 +575,7 @@
 
   <footer class="footer">
     <div class="container">
-      <a class="footer__logo" href="">
+      <a class="footer__logo logo" href="">
         <img class="logo__img" src="images/logo.svg" alt="логотип">
       </a>
       
@@ -649,29 +645,45 @@
         </div>
 
           <address class="footer__address">
-            <a class="footer__address-link" href="tel:+7907288365" aria-label="ссылка для звонка нам на телефон">Горячая линия+7 907 288 365</a>
+            <a class="footer__address-tel" href="tel:+7907288365" aria-label="ссылка для звонка нам на телефон">Горячая линия+7 907 288 365</a>
             
             <span class="footer__address-street">Санкт-Петербург, ул. Ленина, 1</span>
          
             <ul class="footer__address-web">
               <li class="footer__address-link">
-                <a class="footer__address-networks" style="background-image: url('images/icon/social-icon/facebook.svg');"
-                  href="https://www.facebook.com/account" target="_blank" aria-label="ссылка на нашу страничку в facebook"></a>
+                <a class="footer__address-networks" 
+                  href="https://www.facebook.com/account" target="_blank" aria-label="ссылка на нашу страничку в facebook">
+                  <svg class="icon-networks">
+                    <use xlink:href="images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
               </li>
           
               <li class="footer__address-link">
-                <a class="footer__address-networks" style="background-image: url('images/icon/social-icon/youtube.svg');"
-                  href="https://youtube.com/account" target="_blank" aria-label="ссылка на нашу страничку в youtube"></a>
+                <a class="footer__address-networks" 
+                  href="https://youtube.com/account" target="_blank" aria-label="ссылка на нашу страничку в youtube">
+                  <svg class="icon-networks">
+                    <use xlink:href="images/sprite.svg#youtube"></use>
+                  </svg>
+                </a>
               </li>
 
               <li class="footer__address-link">
-                <a class="footer__address-networks" style="background-image: url('images/icon/social-icon/telegram.svg');"
-                  href="https://telegram.com/account" target="_blank" aria-label="ссылка на нашу страничку в telegram"></a>
+                <a class="footer__address-networks" href="https://www.telegram.com/account" target="_blank"
+                  aria-label="ссылка на нашу страничку в telegram">
+                  <svg class="icon-networks">
+                    <use xlink:href="images/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
               </li>
 
               <li class="footer__address-link">
-                <a class="footer__address-networks" style=" background-image: url('images/icon/social-icon/instagram.svg');"
-                  href="https://www.instagram.com/account" target="_blank" aria-label="ссылка на нашу страничку в instagram"></a>
+                <a class="footer__address-networks"
+                  href="https://www.instagram.com/account" target="_blank" aria-label="ссылка на нашу страничку в instagram">
+                  <svg class="icon-networks">
+                    <use xlink:href="images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </address>

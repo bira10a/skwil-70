@@ -1,6 +1,6 @@
 $(function(){
   
-  $('.header__centr-catalog, .header__centr-catalog::before, .header__centr-catalog::after, .header__centr-item').on('click', function () {
+  $('.header__centr-catalog, .header__centr-item').on('click', function () {
     $('.header__centr-items').toggleClass('header__centr-items--active');
     $('.header__centr-products').toggleClass('header__centr-products--active'); 
   })

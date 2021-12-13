@@ -17,10 +17,14 @@ body {
   line-height: 1.4;
   letter-spacing: 0.03em;
   color: $white;
-  background-color: $dark-500;
+  background-color: $dark-800;
   padding: 15px 53px;
   border-radius: 0 6px 6px 0;
   outline: transparent;
+}
+
+.logo {
+  outline: transparent
 }
 
 .link {
