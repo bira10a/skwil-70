@@ -13,5 +13,5 @@ $(function(){
     autoplaySpead: 2000,
   })
 
-
+  var mixer = mixitup('.product-card__content');
 })

@@ -1,8 +1,19 @@
+html,
+body {
+  height: 100%;
+}
+
 body {
   @extend %opensans-600;
   color: $dark-900;
   font-size: 14px;
   background-color: $white;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
 }
 
 .container {
@@ -90,4 +101,36 @@ body {
   border-radius: 6px;
   top: 12px;
   left: 12px;
+}
+
+.badges-new {
+  background-color: $green-900;
+}
+
+.badges-promotion {
+  background-color: $red-900;
+}
+
+.badges-hit {
+  background-color: $orange-900;
+}
+
+.btn-heart {
+  @extend %positioning-icons;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  outline: transparent;
+  padding: 9px 6px 6px 6px;
+  transition: box-shadow linear 0.2s, border-radius linear 0.2s;
+  &:focus {
+    box-shadow: 0 0 0 3px #E0EDCF;
+    border-radius: 3px;
+  }
+  &:hover { 
+    stroke: $yellow-900;
+  }
+  &:active {
+    stroke: rgba(255, 184, 0, 0.5);
+  }
 }

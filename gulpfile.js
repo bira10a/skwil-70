@@ -8,17 +8,6 @@ const del = require('del');
 const browserSync = require('browser-sync').create();
 const svgSprite = require('gulp-svg-sprite');
 
-// const svgSprite = () => {
-//   return src('app/images/**.svg')
-//     .pipe(svgSprite({
-//       mode: {
-//         stack: {
-//           sprite: "../sprite.svg"
-//         }
-//       }
-//     }))
-//     .pipe(dest('app/images'))
-// }
 
 function svgSprites() {
   return src('app/images/icon/*.svg') // выбираем в папке с иконками все файлы с расширением svg
@@ -61,6 +50,7 @@ function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/mixitup/dist/mixitup.js',
     'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))
@@ -98,7 +88,6 @@ function cleanDist() {
 function watching() {
   watch(['app/scss/**/*.scss'], styles);
   watch(['app/images/icon/*.svg'], svgSprite);
-  // watch(['app/js/**/*.js', '!app/main.min.js'], scripts);
   watch(['app/**/*.html']).on('change', browserSync.reload);
 }
 
@@ -111,5 +100,4 @@ exports.svgSprites = svgSprites;
 exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, images, build);
 
-// exports.default = series(svgSprite);
 exports.default = parallel(svgSprites, styles, scripts, browsersync, watching);
