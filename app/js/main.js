@@ -1,11 +1,11 @@
 $(function(){
   
-  $('.header__centr-catalog, .header__centr-item').on('click', function () {
-    $('.header__centr-items').toggleClass('header__centr-items--active');
-    $('.header__centr-products').toggleClass('header__centr-products--active'); 
+  $('.header-bottom__btn, .header-bottom__item').on('click', function () {
+    $('.header-bottom__list').toggleClass('header-bottom__list--active');
+    $('.header-bottom__btn').toggleClass('header-bottom__btn--active'); 
   })
 
-  $('.slider__items').slick({
+  $('.top-slider__items').slick({
     prevArrow: '<button type="button" class="slick-prev"><img src="images/arrow-prev.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-next.svg" alt=""></button>',
     fade: true,
@@ -13,5 +13,5 @@ $(function(){
     autoplaySpead: 2000,
   })
 
-  var mixer = mixitup('.product-card__content');
+  var mixer = mixitup('.top-products__content');
 })

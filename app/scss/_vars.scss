@@ -12,6 +12,12 @@ $silver-600: #C1C1C1;
 $silver-100: #F6F6F6;
 $white:      #FFFFFF;
 
+@mixin r($width) {
+  @media (max-width: #{$width}px) {
+    @content;
+   }
+}
+
 %flex {
   display: flex;
   justify-content: space-between;

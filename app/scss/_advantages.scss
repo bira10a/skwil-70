@@ -1,0 +1,61 @@
+.advantages {
+  padding: 48px 0 29px 0;
+  background-color: $silver-100;
+
+  &__items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+
+  &__item {
+    @extend %flex-column;
+    line-height: 1.4;
+    max-width: 190px;
+    width: 100%;
+    position: relative;
+    margin-left: 0;
+    margin-right: 139px;
+
+    &:first-child {
+      margin-left: 259px;
+      margin-right: 139px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::before {
+      content: "";
+      @extend %positioning-icons;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      left: -74px;
+    }
+  }
+
+  &__item--scooter::before {
+    background-image: url('../images/scooter.svg');
+  }
+
+  &__item--product::before {
+    background-image: url('../images/product.svg');
+  }
+
+  &__item--24-hours::before {
+    background-image: url('../images/24-hours.svg');
+  }
+
+  &__title {
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+  
+  &__text {
+    color: $dark-500;
+    font-weight: 400;
+  }
+}

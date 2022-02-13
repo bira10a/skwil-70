@@ -87,7 +87,8 @@ function cleanDist() {
 
 function watching() {
   watch(['app/scss/**/*.scss'], styles);
-  watch(['app/images/icon/*.svg'], svgSprite);
+  watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
+  watch(['app/images/icon/*.svg'], svgSprites);
   watch(['app/**/*.html']).on('change', browserSync.reload);
 }
 
