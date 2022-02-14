@@ -56,26 +56,32 @@
     color: $dark-900;
     padding-top: 56px;
     position: relative;
-
+    transition: border-color linear 0.2s;
+    
     &:hover {
-      &::before {
-        @include pseudo;
-        background-image: url('../images/icon/products-search.svg');
-        width: 48px;
-        height: 48px;
-        top: 35%;
-        left: 41%;
-        z-index: 4;
+      border-color: $green-900;
+
+      .products-card__images {
+        
+        &::before {
+          visibility: visible;
+          opacity: 1;
+        }
+
+        &::after {
+          visibility: visible;
+          opacity: 1;
+        }
       }
 
-      &::after {
-        @include pseudo;
-        left: 0;
-        top: 55px;
-        width: 100%;
-        height: 53%;
-        background-color: rgba(0, 0, 0, 0.1);
-      }
+      // &::after {
+      //   @include pseudo;
+      //   left: 0;
+      //   top: 55px;
+      //   width: 100%;
+      //   height: 53%;
+      //   background-color: rgba(0, 0, 0, 0.1);
+      // }
     }
   }
 
@@ -190,6 +196,31 @@
     position: relative;
     display: block;
     margin-bottom: 19px;
+    
+    &::before {
+        @include pseudo;
+        background-image: url('../images/icon/products-search.svg');
+        width: 48px;
+        height: 48px;
+        top: 42%;
+        left: 43%;
+        z-index: 4;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility  0.2s, opacity linear 0.3s;
+      }
+
+      &::after {
+        @include pseudo;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility  0.2s, opacity linear 0.3s;
+      }
   }
 
   &__img {
