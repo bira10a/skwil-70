@@ -57,13 +57,52 @@
   padding: 14px 21px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 6px;
+  outline: transparent;
+  transition: box-shadow linear 0.2s, background-color linear 0.2s;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 19px;
+    height: 32px;
+    background-color: #333;
+    transition: background-color linear 0.2s;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(99, 166, 14, 0.5);
+  }
+
+  &:hover {
+    background-color: $green-200;
+
+    &::before {
+      background-color: $green-900;
+    }
+  }
+
+  &:active {
+    background-color: #F3F3F2;
+
+    &::before {
+      background-color: $green-900;
+    }
+  }
 }
 
 .slick-prev {
   left: 60px;
   z-index: 2;
+
+  &::before {
+    mask: url('../images/sprite.svg#arrow-prev') center / cover no-repeat;
+  }
 }
 
 .slick-next {
- right: 60px;
+  right: 60px;
+
+  &::before {
+    mask: url('../images/sprite.svg#arrow-next') center / cover no-repeat;
+  }
 }

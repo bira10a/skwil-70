@@ -71,9 +71,6 @@ main {
   position: $pos;
 }
 
-
-
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -115,56 +112,5 @@ main {
   }
   &:active {
     stroke: rgba(255, 184, 0, 0.5);
-  }
-}
-
-.form-search {
-  display: flex;
-  position: relative;
-  margin-right: 46px;
-  
-  &::before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    mask: url('../images/sprite.svg#icon-search') center / cover no-repeat;
-    background-color: $dark-800;
-    position: absolute;
-    top: 16px;
-    left: 13px;
-  }
-
-  &__input {
-    background-color: $white;
-    border-radius: 6px 0 0 6px;
-    padding: 15px 166px 15px 51px;
-    font-size: 14px;
-    line-height: 1.4;
-    letter-spacing: 0.03em;
-
-    &::placeholder {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1.4;
-      color: $dark-800;
-      letter-spacing: 0.03em;
-      opacity: 1;
-    }
-  }
-
-  &__btn {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.4;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    background-color: $dark-800;
-    color: $white;
-    border-radius: 0 6px 6px 0;
-    padding: 15px 53px 15px 52px;
-    transition: background-color linear 0.2s, color linear 0.2s;
   }
 }

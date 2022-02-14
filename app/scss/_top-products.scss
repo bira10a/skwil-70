@@ -56,6 +56,27 @@
     color: $dark-900;
     padding-top: 56px;
     position: relative;
+
+    &:hover {
+      &::before {
+        @include pseudo;
+        background-image: url('../images/icon/products-search.svg');
+        width: 48px;
+        height: 48px;
+        top: 35%;
+        left: 41%;
+        z-index: 4;
+      }
+
+      &::after {
+        @include pseudo;
+        left: 0;
+        top: 55px;
+        width: 100%;
+        height: 53%;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
   }
 
   &__btn {

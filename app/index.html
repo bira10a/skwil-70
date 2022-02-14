@@ -155,7 +155,7 @@
     <section class="top-slider">
       <h2 class="sr-only">Главные акции и скидки</h2>
       
-        <ul class="top-slider__items" >
+        <ul class="top-slider__items">
           <li class="top-slider__item" style="background-image: url('images/bg__img/carrots-bg.jpg');">
             <div class="top-slider__container container">
 
@@ -259,40 +259,41 @@
           Топовые товары
         </h2>
 
-        <ul class="top-products__list filters">
-          <li class="filters__item">
-            <button class="filters__btn" type="button" data-filter="all">
-              Все товары
-            </button>
-          </li>
+        <div data-ref="container-1">
+          <ul class="top-products__list filters">
+            <li class="filters__item">
+              <button class="filters__btn" type="button" data-filter="all">
+                Все товары
+              </button>
+            </li>
 
-          <li class="filters__item">
-            <button class="filters__btn" type="button" data-filter=".category-a">
-              Фрукты              
-            </button>
-          </li>
+            <li class="filters__item">
+              <button class="filters__btn" type="button" data-filter=".category-a">
+                Фрукты              
+              </button>
+            </li>
 
-          <li class="filters__item">
-            <button class="filters__btn" type="button" data-filter=".category-b">
-              ОВОЩИ
-            </button>
-          </li>
+            <li class="filters__item">
+              <button class="filters__btn" type="button" data-filter=".category-b">
+                ОВОЩИ
+              </button>
+            </li>
 
-          <li class="filters__item">
-            <button class="filters__btn" type="button" data-filter=".category-c">
-              Напитки
-            </button>
-          </li>
+            <li class="filters__item">
+              <button class="filters__btn" type="button" data-filter=".category-c">
+                Напитки
+              </button>
+            </li>
 
-          <li class="filters__item">
-            <button class="filters__btn" type="button" data-filter=".category-d">
-              БАКАЛЕЯ
-            </button>
-          </li>
-        </ul>
-
+            <li class="filters__item">
+              <button class="filters__btn" type="button" data-filter=".category-d">
+                БАКАЛЕЯ
+              </button>
+            </li>
+          </ul>
+        
           <ul class="top-products__content">
-            <li class="top-products__item category-a">
+            <li class="top-products__item mix category-a">
               <article class="top-products__card products-card">
 
                 <div class="top-products__badges badges">
@@ -329,7 +330,7 @@
               </article>
             </li>
 
-            <li class="top-products__item category-a">
+            <li class="top-products__item mix category-a">
               <article class="top-products__card products-card">
             
                 <div class="top-products__badges badges">
@@ -367,7 +368,7 @@
               </article>
             </li>
 
-            <li class="top-products__item category-a">
+            <li class="top-products__item mix category-a">
               <article class="top-products__card products-card">
             
                 <div class="top-products__badges badges">
@@ -405,7 +406,7 @@
               </article>
             </li>
 
-            <li class="top-products__item category-d">
+            <li class="top-products__item mix category-d">
               <article class="top-products__card products-card">
             
                 <div class="top-products__badges badges">
@@ -443,7 +444,7 @@
               </article>
             </li>
 
-            <li class="top-products__item category-b">
+            <li class="top-products__item mix category-b">
               <article class="top-products__card products-card">
             
                 <div class="top-products__badges badges">
@@ -481,7 +482,7 @@
               </article>
             </li>
 
-            <li class="top-products__item category-c">
+            <li class="top-products__item mix category-c">
               <article class="top-products__card products-card">
             
                 <div class="top-products__badges badges">
@@ -519,7 +520,7 @@
               </article>
             </li>
 
-            <li class="top-products__item category-d">
+            <li class="top-products__item mix category-d">
               <article class="top-products__card products-card">
             
                 <div class="top-products__badges badges">
@@ -557,7 +558,7 @@
               </article>
             </li>
 
-            <li class="top-products__item category-b">
+            <li class="top-products__item mix category-b">
               <article class="top-products__card products-card">
             
                 <div class="top-products__badges badges">
@@ -595,6 +596,7 @@
               </article>
             </li>
           </ul>
+        </div>
 
           <button class="top-products__button btn" type="button">Показать еще</button>
       </div>
@@ -656,404 +658,406 @@
         <h2 class="promotions__title title">
           Акции
         </h2>
-    
-        <ul class="promotions__list filters">
-          <li class="filters__item">
-            <button class="filters__btn" type="button" data-filter="all">
-              Все товары
-            </button>
-          </li>
-    
-          <li class="filters__item">
-            <button class="filters__btn" type="button" data-filter=".category-a">
-              НовИНКИ
-            </button>
-          </li>
-    
-          <li class="filters__item">
-            <button class="filters__btn" type="button" data-filter=".category-b">
-              ХИТЫ
-            </button>
-          </li>
-        </ul>
         
-        <ul class="promotions__content">
-          <li class="promotions__item category-a">
-            <article class="promotions__card promotions-card">
+        <div data-ref="container-2">
+          <ul class="promotions__list filters">
+            <li class="filters__item">
+              <button class="filters__btn" type="button" data-filter="all">
+                Все товары
+              </button>
+            </li>
+      
+            <li class="filters__item">
+              <button class="filters__btn" type="button" data-filter=".category-a">
+                НовИНКИ
+              </button>
+            </li>
+      
+            <li class="filters__item">
+              <button class="filters__btn" type="button" data-filter=".category-b">
+                ХИТЫ
+              </button>
+            </li>
+          </ul>
         
-              <div class="promotions__badges badges">
-                <span class="badges__item badges__item--new badges__item--on">новинка</span>
-                <span class="badges__item badges__item--hit">хит</span>
-              </div>
-        
-              <a class="promotions-card__images" data-fancybox="images" data-width="2048" data-height="1365"
-                data-caption="My caption" href="#">
-                <img class="promotions-card__img" src="images/promotions/pineapple.jpg" alt="ананас">
-              </a>
-        
-              <div class="promotions-card__info">
-                <h3 class="promotions-card__name">
-                  <a class="promotions-card__link" href="#">Ананас, 1 кг</a>
-                </h3>
-
-                <div class="promotions-card__bottom">
-                  <div class="promotions-card__availability availability">
-                    <span class="availability__item availability__item--on">
-                      В НАЛИЧИИ
-                    </span>
-                    <span class="availability__item availability__item--leftover">
-                      ЗАКАНЧИВАЕТСЯ
-                    </span>
-                    <span class="availability__item availability__item--ended">
-                      НЕТ В НАЛИЧИИ
-                    </span>
-                  </div>
-
-                  <ul class="promotions-card__price price">
-                    <li class="price__item">
-                      999 <span>₽</span>
-                    </li>
-
-                    <li class="price__item price__item--old price__item--on">
-                      1999 <span>₽</span>
-                    </li>
-                  </ul>
-
-                  <span class="promotions-card__bottom-star">4.5</span>
+          <ul class="promotions__content">
+            <li class="promotions__item mix category-a">
+              <article class="promotions__card promotions-card">
+          
+                <div class="promotions__badges badges">
+                  <span class="badges__item badges__item--new badges__item--on">новинка</span>
+                  <span class="badges__item badges__item--hit">хит</span>
                 </div>
-              </div>
-            </article>
-          </li>
+          
+                <a class="promotions-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                  data-caption="My caption" href="#">
+                  <img class="promotions-card__img" src="images/promotions/pineapple.jpg" alt="ананас">
+                </a>
+          
+                <div class="promotions-card__info">
+                  <h3 class="promotions-card__name">
+                    <a class="promotions-card__link" href="#">Ананас, 1 кг</a>
+                  </h3>
 
-          <li class="promotions__item category-a">
-            <article class="promotions__card promotions-card">
-          
-              <div class="promotions__badges badges">
-                <span class="badges__item badges__item--new badges__item--on">новинка</span>
-                <span class="badges__item badges__item--hit">хит</span>
-              </div>
-          
-              <a class="promotions-card__images" data-fancybox="images" data-width="2048" data-height="1365"
-                data-caption="My caption" href="#">
-                <img class="promotions-card__img" src="images/promotions/coffee.jpg" alt="кофе">
-              </a>
-          
-              <div class="promotions-card__info">
-                <h3 class="promotions-card__name">
-                  <a class="promotions-card__link" href="#">Кофе с коноплей органический Caffé Salomoni 250г</a>
-                </h3>
-          
-                <div class="promotions-card__bottom">
-                  <div class="promotions-card__availability availability">
-                    <span class="availability__item">
-                      В НАЛИЧИИ
-                    </span>
-                    <span class="availability__item availability__item--leftover availability__item--on">
-                      ЗАКАНЧИВАЕТСЯ
-                    </span>
-                    <span class="availability__item availability__item--ended">
-                      НЕТ В НАЛИЧИИ
-                    </span>
-                  </div>
-          
-                  <ul class="promotions-card__price price">
-                    <li class="price__item">
-                      777 <span>₽</span>
-                    </li>
-          
-                    <li class="price__item price__item--old price__item--on">
-                      877 <span>₽</span>
-                    </li>
-                  </ul>
-          
-                  <span class="promotions-card__bottom-star">4.9</span>
-                </div>
-              </div>
-            </article>
-          </li>
+                  <div class="promotions-card__bottom">
+                    <div class="promotions-card__availability availability">
+                      <span class="availability__item availability__item--on">
+                        В НАЛИЧИИ
+                      </span>
+                      <span class="availability__item availability__item--leftover">
+                        ЗАКАНЧИВАЕТСЯ
+                      </span>
+                      <span class="availability__item availability__item--ended">
+                        НЕТ В НАЛИЧИИ
+                      </span>
+                    </div>
 
-          <li class="promotions__item category-a">
-            <article class="promotions__card promotions-card">
-          
-              <div class="promotions__badges badges">
-                <span class="badges__item badges__item--new badges__item--on">новинка</span>
-                <span class="badges__item badges__item--hit">хит</span>
-              </div>
-          
-              <a class="promotions-card__images" data-fancybox="images" data-width="2048" data-height="1365"
-                data-caption="My caption" href="#">
-                <img class="promotions-card__img" src="images/promotions/strawberry.jpg" alt="клубника">
-              </a>
-          
-              <div class="promotions-card__info">
-                <h3 class="promotions-card__name">
-                  <a class="promotions-card__link" href="#">Клубника, 1 кг</a>
-                </h3>
-          
-                <div class="promotions-card__bottom">
-                  <div class="promotions-card__availability availability">
-                    <span class="availability__item">
-                      В НАЛИЧИИ
-                    </span>
-                    <span class="availability__item availability__item--leftover">
-                      ЗАКАНЧИВАЕТСЯ
-                    </span>
-                    <span class="availability__item availability__item--ended availability__item--on">
-                      НЕТ В НАЛИЧИИ
-                    </span>
-                  </div>
-          
-                  <ul class="promotions-card__price price">
-                    <li class="price__item">
-                      440 <span>₽</span>
-                    </li>
-          
-                    <li class="price__item price__item--old price__item--on">
-                      600 <span>₽</span>
-                    </li>
-                  </ul>
-          
-                  <span class="promotions-card__bottom-star">5.0</span>
-                </div>
-              </div>
-            </article>
-          </li>
+                    <ul class="promotions-card__price price">
+                      <li class="price__item">
+                        999 <span>₽</span>
+                      </li>
 
-          <li class="promotions__item category-a">
-            <article class="promotions__card promotions-card">
-          
-              <div class="promotions__badges badges">
-                <span class="badges__item badges__item--new badges__item--on">новинка</span>
-                <span class="badges__item badges__item--hit">хит</span>
-              </div>
-          
-              <a class="promotions-card__images" data-fancybox="images" data-width="2048" data-height="1365"
-                data-caption="My caption" href="#">
-                <img class="promotions-card__img" src="images/promotions/mango.jpg" alt="манго">
-              </a>
-          
-              <div class="promotions-card__info">
-                <h3 class="promotions-card__name">
-                  <a class="promotions-card__link" href="#">Манго, 1 шт</a>
-                </h3>
-          
-                <div class="promotions-card__bottom">
-                  <div class="promotions-card__availability availability">
-                    <span class="availability__item availability__item--on">
-                      В НАЛИЧИИ
-                    </span>
-                    <span class="availability__item availability__item--leftover">
-                      ЗАКАНЧИВАЕТСЯ
-                    </span>
-                    <span class="availability__item availability__item--ended">
-                      НЕТ В НАЛИЧИИ
-                    </span>
-                  </div>
-          
-                  <ul class="promotions-card__price price">
-                    <li class="price__item">
-                      660 <span>₽</span>
-                    </li>
-          
-                    <li class="price__item price__item--old price__item--on">
-                      960 <span>₽</span>
-                    </li>
-                  </ul>
-          
-                  <span class="promotions-card__bottom-star">5.0</span>
-                </div>
-              </div>
-            </article>
-          </li>
+                      <li class="price__item price__item--old price__item--on">
+                        1999 <span>₽</span>
+                      </li>
+                    </ul>
 
-          <li class="promotions__item category-a">
-            <article class="promotions__card promotions-card">
-          
-              <div class="promotions__badges badges">
-                <span class="badges__item badges__item--new badges__item--on">новинка</span>
-                <span class="badges__item badges__item--hit">хит</span>
-              </div>
-          
-              <a class="promotions-card__images" data-fancybox="images" data-width="2048" data-height="1365"
-                data-caption="My caption" href="#">
-                <img class="promotions-card__img" src="images/promotions/salmon.jpg" alt="лосось">
-              </a>
-          
-              <div class="promotions-card__info">
-                <h3 class="promotions-card__name">
-                  <a class="promotions-card__link" href="#">Лосось, 1 кг</a>
-                </h3>
-          
-                <div class="promotions-card__bottom">
-                  <div class="promotions-card__availability availability">
-                    <span class="availability__item availability__item--on">
-                      В НАЛИЧИИ
-                    </span>
-                    <span class="availability__item availability__item--leftover">
-                      ЗАКАНЧИВАЕТСЯ
-                    </span>
-                    <span class="availability__item availability__item--ended">
-                      НЕТ В НАЛИЧИИ
-                    </span>
+                    <span class="promotions-card__bottom-star">4.5</span>
                   </div>
-          
-                  <ul class="promotions-card__price price">
-                    <li class="price__item">
-                      999 <span>₽</span>
-                    </li>
-          
-                    <li class="price__item price__item--old price__item--on">
-                      1199 <span>₽</span>
-                    </li>
-                  </ul>
-          
-                  <span class="promotions-card__bottom-star">4.5</span>
                 </div>
-              </div>
-            </article>
-          </li>
+              </article>
+            </li>
 
-          <li class="promotions__item category-b">
-            <article class="promotions__card promotions-card">
-          
-              <div class="promotions__badges badges">
-                <span class="badges__item badges__item--new">новинка</span>
-                <span class="badges__item badges__item--hit badges__item--on">хит</span>
-              </div>
-          
-              <a class="promotions-card__images" data-fancybox="images" data-width="2048" data-height="1365"
-                data-caption="My caption" href="#">
-                <img class="promotions-card__img" src="images/promotions/juice.jpg" alt="сок">
-              </a>
-          
-              <div class="promotions-card__info">
-                <h3 class="promotions-card__name">
-                  <a class="promotions-card__link" href="#">Сок Granini овощной 100%, 0.5л</a>
-                </h3>
-          
-                <div class="promotions-card__bottom">
-                  <div class="promotions-card__availability availability">
-                    <span class="availability__item">
-                      В НАЛИЧИИ
-                    </span>
-                    <span class="availability__item availability__item--leftover availability__item--on">
-                      ЗАКАНЧИВАЕТСЯ
-                    </span>
-                    <span class="availability__item availability__item--ended">
-                      НЕТ В НАЛИЧИИ
-                    </span>
-                  </div>
-          
-                  <ul class="promotions-card__price price">
-                    <li class="price__item">
-                      180 <span>₽</span>
-                    </li>
-          
-                    <li class="price__item price__item--old price__item--on">
-                      230 <span>₽</span>
-                    </li>
-                  </ul>
-          
-                  <span class="promotions-card__bottom-star">4.9</span>
+            <li class="promotions__item mix category-a">
+              <article class="promotions__card promotions-card">
+            
+                <div class="promotions__badges badges">
+                  <span class="badges__item badges__item--new badges__item--on">новинка</span>
+                  <span class="badges__item badges__item--hit">хит</span>
                 </div>
-              </div>
-            </article>
-          </li>
+            
+                <a class="promotions-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                  data-caption="My caption" href="#">
+                  <img class="promotions-card__img" src="images/promotions/coffee.jpg" alt="кофе">
+                </a>
+            
+                <div class="promotions-card__info">
+                  <h3 class="promotions-card__name">
+                    <a class="promotions-card__link" href="#">Кофе с коноплей органический Caffé Salomoni 250г</a>
+                  </h3>
+            
+                  <div class="promotions-card__bottom">
+                    <div class="promotions-card__availability availability">
+                      <span class="availability__item">
+                        В НАЛИЧИИ
+                      </span>
+                      <span class="availability__item availability__item--leftover availability__item--on">
+                        ЗАКАНЧИВАЕТСЯ
+                      </span>
+                      <span class="availability__item availability__item--ended">
+                        НЕТ В НАЛИЧИИ
+                      </span>
+                    </div>
+            
+                    <ul class="promotions-card__price price">
+                      <li class="price__item">
+                        777 <span>₽</span>
+                      </li>
+            
+                      <li class="price__item price__item--old price__item--on">
+                        877 <span>₽</span>
+                      </li>
+                    </ul>
+            
+                    <span class="promotions-card__bottom-star">4.9</span>
+                  </div>
+                </div>
+              </article>
+            </li>
 
-          <li class="promotions__item category-b">
-            <article class="promotions__card promotions-card">
-          
-              <div class="promotions__badges badges">
-                <span class="badges__item badges__item--new">новинка</span>
-                <span class="badges__item badges__item--hit badges__item--on">хит</span>
-              </div>
-          
-              <a class="promotions-card__images" data-fancybox="images" data-width="2048" data-height="1365"
-                data-caption="My caption" href="#">
-                <img class="promotions-card__img" src="images/promotions/basket-frut.jpg" alt="корзина фруктов">
-              </a>
-          
-              <div class="promotions-card__info">
-                <h3 class="promotions-card__name">
-                  <a class="promotions-card__link" href="#">Фруктовая корзина, 1 шт</a>
-                </h3>
-          
-                <div class="promotions-card__bottom">
-                  <div class="promotions-card__availability availability">
-                    <span class="availability__item availability__item--on">
-                      В НАЛИЧИИ
-                    </span>
-                    <span class="availability__item availability__item--leftover">
-                      ЗАКАНЧИВАЕТСЯ
-                    </span>
-                    <span class="availability__item availability__item--ended">
-                      НЕТ В НАЛИЧИИ
-                    </span>
-                  </div>
-          
-                  <ul class="promotions-card__price price">
-                    <li class="price__item">
-                      3990 <span>₽</span>
-                    </li>
-          
-                    <li class="price__item price__item--old price__item--on">
-                      5990 <span>₽</span>
-                    </li>
-                  </ul>
-          
-                  <span class="promotions-card__bottom-star">4.8</span>
+            <li class="promotions__item mix category-a">
+              <article class="promotions__card promotions-card">
+            
+                <div class="promotions__badges badges">
+                  <span class="badges__item badges__item--new badges__item--on">новинка</span>
+                  <span class="badges__item badges__item--hit">хит</span>
                 </div>
-              </div>
-            </article>
-          </li>
+            
+                <a class="promotions-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                  data-caption="My caption" href="#">
+                  <img class="promotions-card__img" src="images/promotions/strawberry.jpg" alt="клубника">
+                </a>
+            
+                <div class="promotions-card__info">
+                  <h3 class="promotions-card__name">
+                    <a class="promotions-card__link" href="#">Клубника, 1 кг</a>
+                  </h3>
+            
+                  <div class="promotions-card__bottom">
+                    <div class="promotions-card__availability availability">
+                      <span class="availability__item">
+                        В НАЛИЧИИ
+                      </span>
+                      <span class="availability__item availability__item--leftover">
+                        ЗАКАНЧИВАЕТСЯ
+                      </span>
+                      <span class="availability__item availability__item--ended availability__item--on">
+                        НЕТ В НАЛИЧИИ
+                      </span>
+                    </div>
+            
+                    <ul class="promotions-card__price price">
+                      <li class="price__item">
+                        440 <span>₽</span>
+                      </li>
+            
+                      <li class="price__item price__item--old price__item--on">
+                        600 <span>₽</span>
+                      </li>
+                    </ul>
+            
+                    <span class="promotions-card__bottom-star">5.0</span>
+                  </div>
+                </div>
+              </article>
+            </li>
 
-          <li class="promotions__item category-b">
-            <article class="promotions__card promotions-card">
-          
-              <div class="promotions__badges badges">
-                <span class="badges__item badges__item--new">новинка</span>
-                <span class="badges__item badges__item--hit badges__item--on">хит</span>
-              </div>
-          
-              <a class="promotions-card__images" data-fancybox="images" data-width="2048" data-height="1365"
-                data-caption="My caption" href="#">
-                <img class="promotions-card__img" src="images/promotions/pork.jpg" alt="свинина-мякоть">
-              </a>
-          
-              <div class="promotions-card__info">
-                <h3 class="promotions-card__name">
-                  <a class="promotions-card__link" href="#">Свинина мякоть, 1 кг</a>
-                </h3>
-          
-                <div class="promotions-card__bottom">
-                  <div class="promotions-card__availability availability">
-                    <span class="availability__item availability__item--on">
-                      В НАЛИЧИИ
-                    </span>
-                    <span class="availability__item availability__item--leftover">
-                      ЗАКАНЧИВАЕТСЯ
-                    </span>
-                    <span class="availability__item availability__item--ended">
-                      НЕТ В НАЛИЧИИ
-                    </span>
-                  </div>
-          
-                  <ul class="promotions-card__price price">
-                    <li class="price__item">
-                      499 <span>₽</span>
-                    </li>
-          
-                    <li class="price__item price__item--old price__item--on">
-                      599 <span>₽</span>
-                    </li>
-                  </ul>
-          
-                  <span class="promotions-card__bottom-star">4.6</span>
+            <li class="promotions__item mix category-a">
+              <article class="promotions__card promotions-card">
+            
+                <div class="promotions__badges badges">
+                  <span class="badges__item badges__item--new badges__item--on">новинка</span>
+                  <span class="badges__item badges__item--hit">хит</span>
                 </div>
-              </div>
-            </article>
-          </li>
-        </ul>
+            
+                <a class="promotions-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                  data-caption="My caption" href="#">
+                  <img class="promotions-card__img" src="images/promotions/mango.jpg" alt="манго">
+                </a>
+            
+                <div class="promotions-card__info">
+                  <h3 class="promotions-card__name">
+                    <a class="promotions-card__link" href="#">Манго, 1 шт</a>
+                  </h3>
+            
+                  <div class="promotions-card__bottom">
+                    <div class="promotions-card__availability availability">
+                      <span class="availability__item availability__item--on">
+                        В НАЛИЧИИ
+                      </span>
+                      <span class="availability__item availability__item--leftover">
+                        ЗАКАНЧИВАЕТСЯ
+                      </span>
+                      <span class="availability__item availability__item--ended">
+                        НЕТ В НАЛИЧИИ
+                      </span>
+                    </div>
+            
+                    <ul class="promotions-card__price price">
+                      <li class="price__item">
+                        660 <span>₽</span>
+                      </li>
+            
+                      <li class="price__item price__item--old price__item--on">
+                        960 <span>₽</span>
+                      </li>
+                    </ul>
+            
+                    <span class="promotions-card__bottom-star">5.0</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li class="promotions__item mix category-a">
+              <article class="promotions__card promotions-card">
+            
+                <div class="promotions__badges badges">
+                  <span class="badges__item badges__item--new badges__item--on">новинка</span>
+                  <span class="badges__item badges__item--hit">хит</span>
+                </div>
+            
+                <a class="promotions-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                  data-caption="My caption" href="#">
+                  <img class="promotions-card__img" src="images/promotions/salmon.jpg" alt="лосось">
+                </a>
+            
+                <div class="promotions-card__info">
+                  <h3 class="promotions-card__name">
+                    <a class="promotions-card__link" href="#">Лосось, 1 кг</a>
+                  </h3>
+            
+                  <div class="promotions-card__bottom">
+                    <div class="promotions-card__availability availability">
+                      <span class="availability__item availability__item--on">
+                        В НАЛИЧИИ
+                      </span>
+                      <span class="availability__item availability__item--leftover">
+                        ЗАКАНЧИВАЕТСЯ
+                      </span>
+                      <span class="availability__item availability__item--ended">
+                        НЕТ В НАЛИЧИИ
+                      </span>
+                    </div>
+            
+                    <ul class="promotions-card__price price">
+                      <li class="price__item">
+                        999 <span>₽</span>
+                      </li>
+            
+                      <li class="price__item price__item--old price__item--on">
+                        1199 <span>₽</span>
+                      </li>
+                    </ul>
+            
+                    <span class="promotions-card__bottom-star">4.5</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li class="promotions__item mix category-b">
+              <article class="promotions__card promotions-card">
+            
+                <div class="promotions__badges badges">
+                  <span class="badges__item badges__item--new">новинка</span>
+                  <span class="badges__item badges__item--hit badges__item--on">хит</span>
+                </div>
+            
+                <a class="promotions-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                  data-caption="My caption" href="#">
+                  <img class="promotions-card__img" src="images/promotions/juice.jpg" alt="сок">
+                </a>
+            
+                <div class="promotions-card__info">
+                  <h3 class="promotions-card__name">
+                    <a class="promotions-card__link" href="#">Сок Granini овощной 100%, 0.5л</a>
+                  </h3>
+            
+                  <div class="promotions-card__bottom">
+                    <div class="promotions-card__availability availability">
+                      <span class="availability__item">
+                        В НАЛИЧИИ
+                      </span>
+                      <span class="availability__item availability__item--leftover availability__item--on">
+                        ЗАКАНЧИВАЕТСЯ
+                      </span>
+                      <span class="availability__item availability__item--ended">
+                        НЕТ В НАЛИЧИИ
+                      </span>
+                    </div>
+            
+                    <ul class="promotions-card__price price">
+                      <li class="price__item">
+                        180 <span>₽</span>
+                      </li>
+            
+                      <li class="price__item price__item--old price__item--on">
+                        230 <span>₽</span>
+                      </li>
+                    </ul>
+            
+                    <span class="promotions-card__bottom-star">4.9</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li class="promotions__item mix category-b">
+              <article class="promotions__card promotions-card">
+            
+                <div class="promotions__badges badges">
+                  <span class="badges__item badges__item--new">новинка</span>
+                  <span class="badges__item badges__item--hit badges__item--on">хит</span>
+                </div>
+            
+                <a class="promotions-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                  data-caption="My caption" href="#">
+                  <img class="promotions-card__img" src="images/promotions/basket-frut.jpg" alt="корзина фруктов">
+                </a>
+            
+                <div class="promotions-card__info">
+                  <h3 class="promotions-card__name">
+                    <a class="promotions-card__link" href="#">Фруктовая корзина, 1 шт</a>
+                  </h3>
+            
+                  <div class="promotions-card__bottom">
+                    <div class="promotions-card__availability availability">
+                      <span class="availability__item availability__item--on">
+                        В НАЛИЧИИ
+                      </span>
+                      <span class="availability__item availability__item--leftover">
+                        ЗАКАНЧИВАЕТСЯ
+                      </span>
+                      <span class="availability__item availability__item--ended">
+                        НЕТ В НАЛИЧИИ
+                      </span>
+                    </div>
+            
+                    <ul class="promotions-card__price price">
+                      <li class="price__item">
+                        3990 <span>₽</span>
+                      </li>
+            
+                      <li class="price__item price__item--old price__item--on">
+                        5990 <span>₽</span>
+                      </li>
+                    </ul>
+            
+                    <span class="promotions-card__bottom-star">4.8</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li class="promotions__item mix category-b">
+              <article class="promotions__card promotions-card">
+            
+                <div class="promotions__badges badges">
+                  <span class="badges__item badges__item--new">новинка</span>
+                  <span class="badges__item badges__item--hit badges__item--on">хит</span>
+                </div>
+            
+                <a class="promotions-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                  data-caption="My caption" href="#">
+                  <img class="promotions-card__img" src="images/promotions/pork.jpg" alt="свинина-мякоть">
+                </a>
+            
+                <div class="promotions-card__info">
+                  <h3 class="promotions-card__name">
+                    <a class="promotions-card__link" href="#">Свинина мякоть, 1 кг</a>
+                  </h3>
+            
+                  <div class="promotions-card__bottom">
+                    <div class="promotions-card__availability availability">
+                      <span class="availability__item availability__item--on">
+                        В НАЛИЧИИ
+                      </span>
+                      <span class="availability__item availability__item--leftover">
+                        ЗАКАНЧИВАЕТСЯ
+                      </span>
+                      <span class="availability__item availability__item--ended">
+                        НЕТ В НАЛИЧИИ
+                      </span>
+                    </div>
+            
+                    <ul class="promotions-card__price price">
+                      <li class="price__item">
+                        499 <span>₽</span>
+                      </li>
+            
+                      <li class="price__item price__item--old price__item--on">
+                        599 <span>₽</span>
+                      </li>
+                    </ul>
+            
+                    <span class="promotions-card__bottom-star">4.6</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
         
         <button class="promotions__button btn" type="button">Показать еще</button>
       </div>
