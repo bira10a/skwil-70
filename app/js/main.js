@@ -1,4 +1,6 @@
 $(function(){
+
+  $('.products-card__input').styler();
   
   $('.header-bottom__btn, .header-bottom__item').on('click', function () {
     $('.header-bottom__list').toggleClass('header-bottom__list--active');
