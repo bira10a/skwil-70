@@ -254,6 +254,7 @@
     line-height: 1;
     letter-spacing: 0.03em;
     color: $dark-500;
+    position: relative;
 
     &-basket {
       width: 31px;
@@ -293,6 +294,12 @@
         }
       }
     }
+  }
+
+  &__form {
+    position: absolute;
+    top: 4px;
+    right: 79px;
   }
 }
 
