@@ -34,6 +34,12 @@
       border-bottom: 3px solid rgba(99, 166, 14, 0.2);
       box-shadow: none;
     }
+
+  }
+  
+  .mixitup-control-active {
+    border-bottom: 3px solid #63A60E;
+    color: #63A60E;
   }
 }
 
@@ -57,7 +63,7 @@
     padding-top: 56px;
     position: relative;
     transition: border-color linear 0.2s;
-    
+  
     &:hover {
       border-color: $green-900;
 

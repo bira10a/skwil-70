@@ -135,13 +135,93 @@
                 </li>
 
                 <li class="user-nav__item">
-                  <a href="#" class="user-nav__link">
+                  <button class="user-nav__link" type="button">
                     <svg class="user-nav__icon-cart">
                       <use xlink:href="images/sprite.svg#icon-cart"></use>
                     </svg>
 
                     <div class="user-nav__num">12</div>
-                  </a>
+                  </button>
+
+                  <div class="user-nav__basket basket">
+                    <div class="basket__top">
+                      <div class="basket__title">
+                        <h2 class="basket__name">Корзина</h2>
+                        <button class="basket__clear" type="reset">очистить корзину</button>
+                      </div>
+                      
+                      <button class="basket__exit" type="button"></button>
+                    </div>
+
+                    <ul class="basket__product">
+                      <li class="basket__item">
+                        <article class="basket__card basket-card">
+                          <div class="basket-card__inner">
+                            <a class="basket-card__images" href="#">
+                              <img class="basket-card__img" src="images/promotions/pineapple.jpg" alt="ананас" width="60" height="60">
+                            </a>
+                      
+                            <div class="basket-card__info">
+                              <h3 class="basket-card__name">
+                                <a class="basket-card__link" href="#">Ананас, 1 кг
+                                </a>
+                              </h3>
+                              <span class="basket-card__price">999<span>₽</span></span>
+                            </div>
+                          </div>
+
+                          <div class="basket-card__price-total">
+                            <button class="basket-card__exit" type="button"></button>
+
+                            <div class="basket-card__counter">
+                              <form class="basket-card__form" action="#">
+                                <label class="sr-only" for="message">счётчик товаров</label>   
+                                <input class="basket-card__input" id="message" type="number" name="message" value="2" min="0" max="99">
+                              </form>
+  
+                              <span class="basket-card__price">1998<span>₽</span></span>
+                            </div>
+                          </div>
+                        </article>
+                      </li>
+                      <li class="basket__item">
+                        <article class="basket__card basket-card">
+                          <div class="basket-card__inner">
+                            <a class="basket-card__images" href="#">
+                              <img class="basket-card__img" src="images/basket-card/dragon-fruit.jpg" alt="ананас" width="60" height="60">
+                            </a>
+                      
+                            <div class="basket-card__info">
+                              <h3 class="basket-card__name">
+                                <a class="basket-card__link" href="#">Питахайя красная с белой мякотью, 1шт
+                                </a>
+                              </h3>
+                              <span class="basket-card__price">1019<span>₽</span></span>
+                            </div>
+                          </div>
+                      
+                          <div class="basket-card__price-total">
+                            <button class="basket-card__exit" type="button"></button>
+                      
+                            <div class="basket-card__counter">
+                              <form class="basket-card__form" action="#">
+                                <label class="sr-only" for="message">счётчик товаров</label>
+                                <input class="basket-card__input" id="message" type="number" name="message" value="2" min="0" max="99">
+                              </form>
+                      
+                              <span class="basket-card__price">2038<span>₽</span></span>
+                            </div>
+                          </div>
+                        </article>
+                      </li>
+                    </ul>
+
+                    <div class="basket__bottom">
+                      <span class="basket__bottom-text">Товаров на сумму</span>
+                      <span class="basket__bottom-price">2038<span>₽</span></span>
+                      <button class="basket__bottom-btn" type="submit">Оформить заказ</button>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
