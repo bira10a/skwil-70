@@ -1,11 +1,16 @@
 $(function(){
 
+  // кастом инпут, добавляем + - как нам надо...
   $('.products-card__input').styler();
   $('.basket-card__input').styler();
   
   $('.header-bottom__btn, .header-bottom__item').on('click', function () {
     $('.header-bottom__list').toggleClass('header-bottom__list--active');
     $('.header-bottom__btn').toggleClass('header-bottom__btn--active'); 
+  })
+
+  $('.user-nav__link-basket, .basket__exit').on('click', function () {
+    $('.basket').toggleClass('basket--active');
   })
 
   $('.top-slider__items').slick({

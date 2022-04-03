@@ -281,9 +281,7 @@
     color: $red-900;
     position: absolute;
     padding: 4px;
-    width: 18px;
-    height: 18px;
-    text-align: center;
+    min-width: 18px;
     background-color: $white;
     border-radius: 50%;
     top: 3px;
@@ -311,10 +309,17 @@
 
 .basket {
   position: absolute;
-  top: 0;
+  top: -80px;
   right: 0;
   z-index: 10;
   width: 475px;
+  transform: translateY(-200%);
+  transition: transform ease 0.9s;
+
+  &--active {
+    transform: translateY(0);
+    z-index: 4;
+  }
 
   &__top {
     display: flex;
@@ -368,6 +373,7 @@
   &__product {
     background-color: $silver-100;
     height: 705px;
+    overflow: auto;
   }
 
   &__item {
@@ -379,6 +385,13 @@
     letter-spacing: 0.03em;
     font-size: 24px;
     background-color: $white;
+    
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px;
+    }
 
     &-text {
       font-weight: 400;
@@ -402,6 +415,23 @@
       font-size: 18px;
       line-height: 1.3;
       color: $white;
+      background-color: $green-900;
+      width: 100%;
+      padding: 23px 0;
+      transition:  box-shadow linear 0.2s, background-color linear 0.2s, color linear 0.2s;
+
+      &:focus {
+        box-shadow: 0 0 0 4px #E0EDCF;
+      }
+
+      &:hover {
+        background-color: #4D810C;
+      }
+
+      &:active {
+        box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+        color: rgba(255, 255, 255, 0.5);
+      }
     }
   }
 }
@@ -413,6 +443,11 @@
   background-color: $white;
   border: 1px solid rgba(17, 17, 17, 0.2);
   border-radius: 6px;
+  transition: border-color linear 0.2s;
+
+  &:hover {
+    border-color: $green-900;
+  }
 
   &__inner {
     display: flex;
@@ -429,6 +464,7 @@
 
   &__name {
     margin-bottom: 5px;
+    overflow: hidden;
   }
 
   &__link {
