@@ -14,8 +14,13 @@ body {
   flex-direction: column;
 }
 
-main {
+.body--hidden {
+  overflow: hidden;
+}
+
+.main {
   flex-grow: 1;
+  margin: 0;
 }
 
 .container {

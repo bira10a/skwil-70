@@ -13,6 +13,8 @@
     <nav class="header__nav">
       <div class="header__top header-top">
         <div class="container header-top__container">
+          <button class="header-top__btn-mobile" type="button"></button>
+
           <ul class="header-top__list">
               <li class="header-top__item header-top__item--address">
                 <a class="header-top__link header-top__link--address" href="#">
@@ -46,7 +48,11 @@
       <div class="header__bottom header-bottom">
         <div class="container header-bottom__container">
             <a class="header-bottom__logo" href="#">
-              <img class="header-bottom__img" src="images/logo.svg" alt="логотип">
+              <img class="header-bottom__img" src="images/logo.svg" alt="логотип" width="200" height="60">
+            </a>
+
+            <a class="header-bottom__logo-mobile" href="#">
+              <img class="header-bottom__img-mobile" src="images/logo-mobile.svg" alt="логотип" width="36" height="40">
             </a>
 
               <div class="header-bottom__catalog">
@@ -110,6 +116,9 @@
               <label class="sr-only" for="message">поиск товаров на сайте</label>
 
               <input class="form-search__input" id="message" type="search" placeholder="Найти в магазине ..." name="message" required></input>
+
+              <button class="form-search__btn-mobile" type="button" aria-label="открыть поиск товаров"></button>
+              <input class="form-search__input-mobile" id="message" type="search" placeholder="Я ищу..." name="message" required></input>
               
               <button class="form-search__btn" type="submit">ПОИСК</button>
             </form>
@@ -1277,7 +1286,6 @@
       </div>
     </section>
   </main>
-
   <footer class="footer">
     <div class="container">
       <a class="footer__logo logo" href="#">
@@ -1406,7 +1414,6 @@
       </div>
     </div>
   </footer>
-
 
   <script src="js/main.min.js"></script>
 </body>
