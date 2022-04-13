@@ -19,7 +19,7 @@ $(function(){
     $('.form-search__btn').toggleClass('form-search__btn--active');
     $('.form-search__btn-mobile').toggleClass('form-search__btn-mobile--active');
     $('.form-search').toggleClass('form-search--mobile');
-    $('body').toggleClass('body--hidden');
+    // $('body').toggleClass('body--hidden');
   })
 
   $('.top-slider__items').slick({
