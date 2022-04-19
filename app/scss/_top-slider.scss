@@ -5,6 +5,11 @@
     display: flex;
     align-items: center;
     height: 100%;
+
+    @include r(576) {
+      padding: 0;
+      align-items: flex-start;
+    }
   }
 
   &__item {
@@ -21,6 +26,11 @@
       background-color: rgba(255, 255, 255, 0.8);
       border-radius: 4px;
       align-items: flex-start;
+
+      @include r(576) {
+        padding: 15px;
+        margin-top: 60px;
+      }
     }
 
     &-title {
@@ -33,6 +43,23 @@
       &:nth-child(2) {
         color: $red-900;
         margin-bottom: 12px;
+
+        @include r(576) {
+          margin-bottom: 18px;
+        }
+      }
+
+      @include r(1200) {
+        font-size: 45px;
+      }
+
+      @include r(768) {
+        font-size: 30px;
+      }
+
+      @include r(576) {
+        font-size: 17px;
+        margin-bottom: 5px;
       }
     }
 
@@ -41,10 +68,22 @@
       font-size: 16px;
       line-height: 1.4;
       margin-bottom: 32px;
+
+      @include r(576) {
+        margin-bottom: 25px;
+      }
     }
 
     &-link {
       cursor: pointer;
+    }
+
+    @include r(1200) {
+      height: 500px;
+    }
+
+    @include r(576) {
+      height: 320px;
     }
   }
 }
@@ -67,6 +106,10 @@
     height: 32px;
     background-color: #333;
     transition: background-color linear 0.2s;
+
+    @include r(768) {
+      height: 20px;
+    }
   }
 
   &:focus {
@@ -88,6 +131,14 @@
       background-color: $green-900;
     }
   }
+
+  @include r(1540) {
+    top: 87%;
+  }
+
+  @include r(576) {
+    display: none !important;
+  }
 }
 
 .slick-prev {
@@ -97,6 +148,14 @@
   &::before {
     mask: url('../images/sprite.svg#arrow-prev') center / cover no-repeat;
   }
+
+  @include r(1540) {
+    left: 40%;
+  }
+
+  @include r(768) {
+    left: 30%;
+  }
 }
 
 .slick-next {
@@ -105,4 +164,52 @@
   &::before {
     mask: url('../images/sprite.svg#arrow-next') center / cover no-repeat;
   }
+
+  @include r(1540) {
+    right: 40%;
+  }
+
+  @include r(768) {
+    right: 30%;
+  }
+}
+
+.slick-dots {
+  display: flex;
+  position: absolute;
+  bottom: 16px;
+  left: 43%;
+}
+
+.slick-dots button {
+  display: none; 
+
+  @include r(576) {
+    display: block;
+    font-size: 0;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    background-color: $white;
+    border-radius: 50%;
+    border: 1px solid $silver-600;
+    margin-right: 12px;
+    outline: transparent;
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba(99, 166, 14, 0.5);
+    }
+
+    &:hover {
+      background-color: $green-200;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+}
+
+.slick-active button {
+  background-color: #63A60E;
 }

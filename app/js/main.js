@@ -31,6 +31,7 @@ $(function(){
     fade: true,
     autoplay: true,
     autoplaySpead: 2000,
+    dots: true,
   })
 
   // var mixer = mixitup('.top-products__content'); для одного слайдера на странице, тогда div container не нужен

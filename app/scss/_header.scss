@@ -418,10 +418,6 @@
   &--active {
     transform: translateY(0);
   }
-
-  @include r(992) {
-   
-  }
 }
 
 .mobile-networks {
@@ -647,8 +643,8 @@
       margin-left: 20px;
     }
 
-    @include r(375) {
-      margin-left: 17px;
+    @include r(376) {
+      margin-left: 3px;
     }
   }
 
@@ -733,6 +729,11 @@
     height: 31px;
     transition: opacity linear 0.1s;
     width: 32px;
+
+    @include r(376) {
+      width: 24px;
+      height: 23px;
+    }
   }
 }
 
