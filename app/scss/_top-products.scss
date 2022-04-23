@@ -9,6 +9,22 @@
     &:last-child {
       margin-right: 0;
     }
+
+    @include r(576) {
+      margin-bottom: 14px;
+
+      &:nth-child(1) {
+        margin-right: 31px;
+      }
+
+      &:nth-child(2) {
+        margin-right: 25px;
+      }
+
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+    }
   }
 
   &__btn {
@@ -35,11 +51,21 @@
       box-shadow: none;
     }
 
+    @include r(576) {
+      font-size: 14px;
+    }
   }
   
   .mixitup-control-active {
     border-bottom: 3px solid #63A60E;
     color: #63A60E;
+  }
+
+  @include r(576) {
+    flex-wrap: wrap;
+    max-width: 310px;
+    margin: 0 auto;
+    margin-bottom: 7px;
   }
 }
 
@@ -47,11 +73,36 @@
   text-align: center;
   padding-bottom: 72px;
 
+  &__title {
+    @include r(992) {
+      font-size: 26px;
+      padding-top: 50px;
+    }
+
+    @include r(576) {
+      font-size: 24px;
+      margin-bottom: 23px;
+    }
+  }
+
   &__content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
     margin-bottom: 46px;
+
+    @include r(1035) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include r(768) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include r(576) {
+      grid-gap: 5px;
+      margin-bottom: 23px;
+    }
   }
   
   &__item {
@@ -116,6 +167,13 @@
         background-color: rgba(255, 184, 0, 0.5);
       }
     }
+
+    @include r(576) {
+      &::before {
+        width: 24px;
+        height: 22px;
+      }
+    }
   }
 
   &__button {
@@ -135,6 +193,12 @@
     &:active {
       box-shadow: inset 0 10px 4px rgba(0, 0, 0, 0.1);
       color: rgba(99, 166, 14, 0.5);
+    }
+
+    @include r(576) {
+      font-size: 18px;
+      margin-left: 9px;
+      padding: 11px 24px;
     }
   }
 }
@@ -218,6 +282,15 @@
         opacity: 0;
         transition: visibility  0.2s, opacity linear 0.3s;
       }
+
+      @include r(576) {
+        margin-bottom: 14px;
+
+        &::before {
+          left: 34%;
+          top: 34%;
+        }
+      }
   }
 
   &__img {
@@ -234,11 +307,19 @@
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
+
+    @include r(576) {
+      padding: 0 12px 12px 11px;
+    }
   }
 
   &__name {
     margin-bottom: 11px;
     flex: 1 1 auto;
+
+    @include r(576) {
+      margin-bottom: 49px;
+    }
   }
 
   &__link {
@@ -306,6 +387,10 @@
     position: absolute;
     top: 4px;
     right: 79px;
+
+    @include r(790) {
+      display: none;
+    }
   }
 }
 
@@ -334,6 +419,10 @@
     &--on {
       display: block;
     }
+  }
+
+  @include r(576) {
+    padding-left: 0;    
   }
 }
 

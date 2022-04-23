@@ -47,6 +47,10 @@
       @include r(725) {
         margin-right: 0;
       }
+
+      @include r(576) {
+        margin-left: 74px;
+      }
     }
 
     &:last-child {
@@ -75,6 +79,16 @@
     @include r(612) {
       margin-bottom: 30px;
     }
+
+    @include r(576) {
+      margin-bottom: 29px;
+      margin-left: 74px;
+      max-width: 220px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__item--scooter::before {
@@ -97,5 +111,9 @@
   &__text {
     color: $dark-500;
     font-weight: 400;
+  }
+
+  @include r(576) {
+    padding: 31px 0;
   }
 }
