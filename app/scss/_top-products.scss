@@ -201,6 +201,10 @@
       padding: 11px 24px;
     }
   }
+
+  @include r(992) {
+    padding-bottom: 47px;
+  }
 }
 
 .badges {
