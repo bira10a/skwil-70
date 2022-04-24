@@ -3,9 +3,21 @@
   background-color: #F5F5F5;
   padding-bottom: 72px;
 
+  &__title {
+    @include r(992) {
+      padding-top: 48px;
+      margin-bottom: 24px;
+      font-size: 24px;
+    }
+  }
+
   &__list {
     li {
       margin-right: 30px;
+    }
+
+    @include r(992) {
+      margin-bottom: 11px;
     }
   }
 
@@ -13,8 +25,24 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
-    margin-bottom: 1px;
     margin-bottom: 45px;
+
+    @include r(1200) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include r(992) {
+      grid-gap: 15px;
+    }
+
+    @include r(935) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include r(640) {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0 25px 26px 23px;
+    }
   }
 
   &__badges {
@@ -26,6 +54,14 @@
     letter-spacing: 0.03em;
     color: $dark-900;
     position: relative;
+  }
+
+  &__button {
+    @include r(576) {
+      font-size: 18px;
+      margin-left: 9px;
+      padding: 11px 24px;
+    }
   }
 }
 
@@ -43,6 +79,10 @@
 
   &__images {
     padding: 13px 0 11px 12px;
+
+    @include r(640) {
+      padding-top: 11px;
+    }
   }
 
   &__img {
@@ -63,6 +103,10 @@
     padding-left: 3px;
     max-width: 165px;
     width: 100%;
+
+    @include r(576) {
+      max-width: 167px;
+    }
   }
 
   &__link {
@@ -129,6 +173,10 @@
         font-size: 12px;
         font-weight: 400;
       }
+    }
+
+    @include r(576) {
+      margin-left: 2px;
     }
   }
 }
