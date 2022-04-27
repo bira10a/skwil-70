@@ -6,11 +6,25 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+
+    @include r(576) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 25px;
+    }
   }
 
   &__title {
     padding-top: 0;
     margin-bottom: 0;
+
+    @include r(790) {
+      font-size: 24px;
+    }
+
+    @include r(576) {
+      margin-bottom: 13px;
+    }
   }
 
   &__link {
@@ -39,11 +53,28 @@
       box-shadow: none;
       color: #63A60E;
     }
+
+    @include r(576) {
+      word-spacing: 4px;
+      line-height: 1;
+      padding-bottom: 5px;
+      padding-right: 3px;
+      margin-right: 0;
+    }
   }
 
   &__list {
     display: flex;
     justify-content: space-between;
+
+    @include r(790) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include r(576) {
+      align-items: flex-start;
+    }
   }
 
   &__item {
@@ -62,6 +93,19 @@
     &:hover {
       .our-news__text {
         color: $green-900;
+      }
+    }
+
+    @include r(992) {
+      margin-right: 15px;
+    }
+
+    @include r(790) {
+      margin-right: 0;
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }
@@ -99,6 +143,21 @@
     img {
       border-radius: 6px 6px 0 0;
     }
+
+    @include r(1250) {
+      img {
+        object-fit: cover;
+      }
+    }
+
+    @include r(576) {
+      margin-bottom: 14px;
+
+      img {
+        max-height: 200px;
+        height: 100%;
+      }
+    }
   }
 
   &__text {
@@ -112,6 +171,17 @@
     flex: 1 1 auto;
     margin-bottom: 18px;
     transition: color linear 0.2s;
+
+    @include r(576) {
+      font-size: 14px;
+      max-width: 340px;
+      padding-left: 15px;
+      margin-bottom: 14px;
+    }
+  }
+
+  @include r(768) {
+    padding: 48px 0;
   }
 }
 
@@ -131,6 +201,29 @@
     &:last-child {
       margin-right: 55px;
     }
+
+    @include r(1250) {
+      margin-bottom: 15px;
+    }
+
+    @include r(745) {
+      &:nth-child(n+3) {
+        display: none;
+      }
+    }
+
+    @include r(576) {
+      margin-bottom: 0;
+
+      &:nth-child(1) {
+        margin-left: 46px;
+        margin-right: 93px;
+      }
+
+      &:nth-child(2) {
+        margin: 0;
+      }
+    }
   }
 
   &__img {
@@ -140,5 +233,18 @@
     &:hover {
       opacity: 1;
     }
+  }
+
+  @include r(1250) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @include r(768) {
+    padding-bottom: 49px;
+  }
+
+  @include r(376) {
+    justify-content: flex-start;
   }
 }
