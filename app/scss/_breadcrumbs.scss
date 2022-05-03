@@ -1,6 +1,7 @@
 .breadcrumbs {
   background-color: $silver-100;
-  padding: 25px 0;
+  padding-top: 25px;
+  padding-bottom: 23px;
 
   &__list {
     display: flex;
@@ -23,7 +24,7 @@
       border-top: 1px solid $silver-600;
       border-right: 1px solid $silver-600;
       transform: rotate(45deg);
-      top: 5px;
+      top: 4px;
       right: -10px;
     }
 
