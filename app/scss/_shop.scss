@@ -1,0 +1,138 @@
+.shop {
+  &__title {
+    font-family: 'Ruda-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #121212;
+    margin: 48px 0;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.shop-filters {
+  &__item {
+    width: 300px;
+    border: 1px solid $silver-600;
+    border-radius: 6px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+
+      .shop-filters__list-item {
+        margin-bottom: 12px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    font-family: 'Ruda-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $dark-900;
+    padding: 17px 0 17px 17px;
+    border-bottom: 1px solid $silver-600;
+    position: relative;
+    width: 100%;
+    text-align: left;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-top: 2px solid #C1C1C1;
+      border-right: 2px solid #C1C1C1;
+      transform: rotate(-45deg);
+      top: 29px;
+      right: 25px;
+    }
+  }
+
+  &__list {
+    padding: 18px 0 17px 17px;
+    max-height: 299px;
+    overflow: scroll;
+  }
+
+  &__list-item {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    color: $dark-500;
+    margin-bottom: 12px;
+    
+    &:nth-child(3) {
+      margin-bottom: 11px;
+    }
+
+    &:nth-child(4) {
+      margin-bottom: 11px;
+    }
+    
+    &:nth-child(5) {
+      margin-bottom: 11px;
+    }
+
+    &:nth-child(7) {
+      margin-bottom: 7px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__label {
+    display: flex;
+    justify-content: flex-start;
+
+    &:hover {
+      .shop-filters__checkbox {
+        border-color: $dark-500;
+      }
+    }
+  }
+
+  &__input {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+
+    &:checked + .shop-filters__checkbox {
+      border-color: $dark-500;
+      background-image: url(../images/check-on.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__checkbox {
+    width: 24px;
+    height: 24px;
+    background-color: $silver-100;
+    border: 1px solid $silver-600;
+    border-radius: 3px;
+  }
+
+  &__text {
+    margin-left: 12px;
+  }
+}
