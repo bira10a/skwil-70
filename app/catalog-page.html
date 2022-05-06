@@ -413,7 +413,7 @@
                 <li class="shop-filters__list-item">
                   <form class="shop-filters__form" action="#">
                     <label class="shop-filters__label">
-                      <input class="shop-filters__input" type="checkbox">
+                      <input class="shop-filters__input" type="checkbox" checked>
                       <span class="shop-filters__checkbox"></span>
                       <span class="shop-filters__text">Новинка</span>
                     </label>
@@ -497,6 +497,23 @@
                   </form>
                 </li>
               </ul>
+            </li>
+
+            <li class="shop-filters__item">
+              <button class="shop-filters__btn" type="button">
+                Цена
+              </button>
+              <form class="shop-filters__form" action="#">
+                <label class="shop-filters__label shop-filters__label--price">
+                  от <input class="shop-filters__input-from" type="text">
+                  <span>₽</span>
+                  до <input class="shop-filters__input-to" type="text">
+                  <span>₽</span>
+                </label>
+
+                <label class="sr-only">фильтр выбора цены</label>
+                <input class="shop-filters__input-price" type="text" data-min="0" data-max="1200" data-from="100" data-to="1000">
+              </form>
             </li>
           </ul>
     

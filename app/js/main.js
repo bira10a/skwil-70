@@ -1,5 +1,85 @@
 $(function(){
 
+  var $range = $(".shop-filters__input-price");
+  var $inputFrom = $(".shop-filters__input-from");
+  var $inputTo = $(".shop-filters__input-to");
+  var instance;
+  var min = 0;
+  var max = 1200;
+  var from = 0;
+  var to = 0;
+
+  $('.shop-filters__input-price').ionRangeSlider({
+    // type: "double",
+    // onStart: function (data){
+    //   $('.shop-filters__input-from').text(data.from);
+    //   $('.shop-filters__input-to').text(data.to);
+    // },
+    // onChange: function (data){
+    //   $('.shop-filters__input-from').text(data.from);
+    //   $('.shop-filters__input-to').text(data.to);
+    // },
+    skin: "round",
+    type: "double",
+    min: min,
+    max: max,
+    from: 100,
+    to: 1000,
+    onStart: updateInputs,
+    onChange: updateInputs,
+    onFinish: updateInputs
+
+  });
+
+  instance = $range.data("ionRangeSlider");
+
+  function updateInputs(data) {
+    from = data.from;
+    to = data.to;
+
+    $inputFrom.prop("value", from);
+    $inputTo.prop("value", to);
+  }
+
+  $inputFrom.on("change", function () {
+    var val = $(this).prop("value");
+
+    // validate
+    if (val < min) {
+      val = min;
+    } else if (val > to) {
+      val = to;
+    }
+
+    instance.update({
+      from: val
+    });
+
+    $(this).prop("value", val);
+
+  });
+
+  $inputTo.on("change", function () {
+    var val = $(this).prop("value");
+
+    // validate
+    if (val < from) {
+      val = from;
+    } else if (val > max) {
+      val = max;
+    }
+
+    instance.update({
+      to: val
+    });
+
+    $(this).prop("value", val);
+  });
+
+
+
+
+
   // кастом инпут, добавляем + - как нам надо...
   $('.products-card__input').styler();
   $('.basket-card__input').styler();
@@ -48,5 +128,5 @@ $(function(){
   var mixer1 = mixitup(containerEl1, config);
   var mixer2 = mixitup(containerEl2, config);
 
-  
+    
 })
