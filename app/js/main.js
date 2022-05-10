@@ -1,5 +1,7 @@
 $(function(){
 
+  // изменение цены в инпуте и с помощью ползунка
+
   var $range = $(".shop-filters__input-price");
   var $inputFrom = $(".shop-filters__input-from");
   var $inputTo = $(".shop-filters__input-to");
@@ -84,6 +86,8 @@ $(function(){
   $('.products-card__input').styler();
   $('.basket-card__input').styler();
   
+
+  // изменение и добавление новых классов при действиях (клик например)
   $('.header-bottom__btn, .header-bottom__item').on('click', function () {
     $('.header-bottom__list').toggleClass('header-bottom__list--active');
     $('.header-bottom__btn').toggleClass('header-bottom__btn--active'); 
@@ -105,6 +109,14 @@ $(function(){
     $('.menu-mobile').toggleClass('menu-mobile--active');
   })
 
+  $('.shop-content__top-btn').on('click', function () {
+    $('.shop-content__top-btn').removeClass('shop-content__top-btn--active');
+    $(this).addClass('shop-content__top-btn--active');
+  })
+
+
+  // слайдер
+  
   $('.top-slider__items').slick({
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',

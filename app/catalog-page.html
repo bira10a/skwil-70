@@ -520,7 +520,7 @@
           <div class="shop__content shop-content">
             <ul class="shop-content__top">
               <li class="shop-content__top-item">
-                <select class="shop-content__top-btn select">
+                <select class="select">
                   <option disabled>По названию</option>
                   <option>По названию</option>
                   <option>По популярности</option>
@@ -531,7 +531,7 @@
               </li>
 
               <li class="shop-content__top-item">
-                <select class="shop-content__top-btn select">
+                <select class="select">
                   <option disabled>по 12</option>
                   <option>по 12</option>
                   <option>по 18</option>
@@ -1252,7 +1252,35 @@
               </li>
             </ul>
 
-            <button class="promotions__button btn" type="button">Показать еще</button>
+            <div class="shop-content__bottom">
+              <button class="promotions__button btn" type="button">Показать еще</button>
+  
+              <div class="shop-content__pagination pagination">
+                <a class="pagination__arrows pagination__prev" href="#"></a>
+                <ul class="pagination__list">
+                  <li class="pagination__item">
+                    <a class="pagination__link pagination__link--active" href="#">1</a>
+                  </li>
+  
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">2</a>
+                  </li>
+  
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">...</a>
+                  </li>
+  
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">9</a>
+                  </li>
+  
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">10</a>
+                  </li>
+                </ul>
+                <a class="pagination__arrows pagination__next" href="#"></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
