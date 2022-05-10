@@ -517,8 +517,742 @@
             </li>
           </ul>
     
-          <div class="shop__content">
-  
+          <div class="shop__content shop-content">
+            <ul class="shop-content__top">
+              <li class="shop-content__top-item">
+                <select class="shop-content__top-btn select">
+                  <option disabled>По названию</option>
+                  <option>По названию</option>
+                  <option>По популярности</option>
+                  <option>Сначала дешевые</option>
+                  <option>Сначала дорогие</option>
+                  <option>По алфавиту</option>
+                </select>
+              </li>
+
+              <li class="shop-content__top-item">
+                <select class="shop-content__top-btn select">
+                  <option disabled>по 12</option>
+                  <option>по 12</option>
+                  <option>по 18</option>
+                  <option>по 24</option>
+                  <option>по 30</option>
+                  <option>по 36</option>
+                </select>
+              </li>
+
+              <li class="shop-content__top-item">
+                <button class="shop-content__top-btn" type="button"></button>
+              </li>
+
+              <li class="shop-content__top-item">
+                <button class="shop-content__top-btn" type="button"></button>
+              </li>
+            </ul>
+
+            <ul class="top-products__content shop-content__products">
+              <li class="top-products__item">
+                <article class="top-products__card products-card">
+            
+                  <div class="top-products__badges badges">
+                    <span class="badges__item badges__item--new badges__item--on">новинка</span>
+                    <span class="badges__item badges__item--hit">хит</span>
+                    <span class="badges__item badges__item--sale badges__item--on">-50%</span>
+                  </div>
+            
+                  <button class="top-products__btn" type="button" aria-label="кнопка для добавления продуктов в избранное"></button>
+            
+                  <a class="products-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                    data-caption="My caption" href="#">
+                    <img class="products-card__img" src="images/filters__img/LIFELINE.jpg" alt="ананас" width="215" height="215">
+                  </a>
+
+                  <div class="promotions-card__availability availability">
+                    <span class="availability__item availability__item--on">
+                      В наличии
+                    </span>
+                    <span class="availability__item availability__item--leftover">
+                      заканчивается
+                    </span>
+                    <span class="availability__item availability__item--ended">
+                      нет в наличии
+                    </span>
+                  </div>
+
+                  <span class="promotions-card__bottom-star">3.5</span>
+            
+                  <div class="products-card__info">
+                    <h3 class="products-card__name">
+                      <a class="products-card__link" href="#">Напиток LIFELINE Intellectual со вкусом арбуза и яблока Фонте Аква 0.5 л</a>
+                    </h3>
+            
+                    <div class="products-card__bottom">
+                      <div class="products-card__price price">
+                        <span class="price__item price__item--old price__item--on">
+                          149 <span>₽</span>
+                        </span>
+            
+                        <span class="price__item">
+                          99 <span>₽</span>
+                        </span>
+                      </div>
+            
+                      <form class="products-card__form" action="#">
+                        <label class="sr-only" for="message">поиск товаров на сайте</label>
+            
+                        <input class="products-card__input" id="message" type="number" name="message" value="1" min="0" max="99">
+                      </form>
+            
+                      <button class="products-card__bottom-basket" type="button"
+                        aria-label="кнопка для добавления продукта в корзину"></button>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            
+              <li class="top-products__item">
+                <article class="top-products__card products-card">
+            
+                  <div class="top-products__badges badges">
+                    <span class="badges__item badges__item--new">новинка</span>
+                    <span class="badges__item badges__item--hit">хит</span>
+                    <span class="badges__item badges__item--sale">-50%</span>
+                  </div>
+            
+                  <button class="top-products__btn" type="button" aria-label="кнопка для добавления продуктов в избранное"></button>
+            
+                  <a class="products-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                    data-caption="My caption" href="#">
+                    <img class="products-card__img" src="images/filters__img/lemon.jpg" alt="лимон" width="300" height="225">
+                  </a>
+
+                  <div class="promotions-card__availability availability">
+                    <span class="availability__item availability__item--on">
+                      В наличии
+                    </span>
+                    <span class="availability__item availability__item--leftover">
+                      заканчивается
+                    </span>
+                    <span class="availability__item availability__item--ended">
+                      нет в наличии
+                    </span>
+                  </div>
+                  
+                  <span class="promotions-card__bottom-star">4.5</span>
+            
+                  <div class="products-card__info">
+                    <h3 class="products-card__name">
+                      <a class="products-card__link" href="#">Лимон, 1кг</a>
+                    </h3>
+            
+                    <div class="products-card__bottom">
+                      <div class="products-card__price price">
+                        <span class="price__item price__item--old"><span>₽</span>
+                        </span>
+            
+                        <span class="price__item">
+                          199 <span>₽</span>
+                        </span>
+                      </div>
+            
+                      <form class="products-card__form" action="#">
+                        <label class="sr-only" for="message">поиск товаров на сайте</label>
+            
+                        <input class="products-card__input" id="message" type="number" name="message" value="1" min="0" max="99">
+                      </form>
+            
+                      <button class="products-card__bottom-basket" type="button"
+                        aria-label="кнопка для добавления продукта в корзину"></button>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            
+              <li class="top-products__item">
+                <article class="top-products__card products-card">
+            
+                  <div class="top-products__badges badges">
+                    <span class="badges__item badges__item--new">новинка</span>
+                    <span class="badges__item badges__item--hit badges__item--on">хит</span>
+                    <span class="badges__item badges__item--sale">-50%</span>
+                  </div>
+            
+                  <button class="top-products__btn" type="button" aria-label="кнопка для добавления продуктов в избранное"></button>
+            
+                  <a class="products-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                    data-caption="My caption" href="#">
+                    <img class="products-card__img" src="images/filters__img/dragon-fruit.jpg" alt="драконий фрукт" width="300" height="234">
+                  </a>
+
+                  <div class="promotions-card__availability availability">
+                    <span class="availability__item availability__item--on">
+                      В наличии
+                    </span>
+                    <span class="availability__item availability__item--leftover">
+                      заканчивается
+                    </span>
+                    <span class="availability__item availability__item--ended">
+                      нет в наличии
+                    </span>
+                  </div>
+                  
+                  <span class="promotions-card__bottom-star">4.5</span>
+            
+                  <div class="products-card__info">
+                    <h3 class="products-card__name">
+                      <a class="products-card__link" href="#">Питахайя красная с белой мякотью, 1шт</a>
+                    </h3>
+            
+                    <div class="products-card__bottom">
+                      <div class="products-card__price price">
+                        <span class="price__item price__item--old"><span>₽</span>
+                        </span>
+            
+                        <span class="price__item">
+                          1019 <span>₽</span>
+                        </span>
+                      </div>
+            
+                      <form class="products-card__form" action="#">
+                        <label class="sr-only" for="message">поиск товаров на сайте</label>
+            
+                        <input class="products-card__input" id="message" type="number" name="message" value="1" min="0" max="99">
+                      </form>
+            
+                      <button class="products-card__bottom-basket" type="button"
+                        aria-label="кнопка для добавления продукта в корзину"></button>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            
+              <li class="top-products__item">
+                <article class="top-products__card products-card">
+            
+                  <div class="top-products__badges badges">
+                    <span class="badges__item badges__item--new">новинка</span>
+                    <span class="badges__item badges__item--hit badges__item--on">хит</span>
+                    <span class="badges__item badges__item--sale">-50%</span>
+                  </div>
+            
+                  <button class="top-products__btn" type="button" aria-label="кнопка для добавления продуктов в избранное"></button>
+            
+                  <a class="products-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                    data-caption="My caption" href="#">
+                    <img class="products-card__img" src="images/filters__img/carrot.jpg" alt="морковка" width="300" height="225">
+                  </a>
+
+                  <div class="promotions-card__availability availability">
+                    <span class="availability__item">
+                      В наличии
+                    </span>
+                    <span class="availability__item availability__item--leftover">
+                      заканчивается
+                    </span>
+                    <span class="availability__item availability__item--ended availability__item--on">
+                      нет в наличии
+                    </span>
+                  </div>
+                  
+                  <span class="promotions-card__bottom-star">4.5</span>
+            
+                  <div class="products-card__info">
+                    <h3 class="products-card__name">
+                      <a class="products-card__link" href="#">Морковь молодая с бабушкиной грядки, 1кг</a>
+                    </h3>
+            
+                    <div class="products-card__bottom">
+                      <div class="products-card__price price">
+                        <span class="price__item price__item--old"><span>₽</span>
+                        </span>
+            
+                        <span class="price__item">
+                          49 <span>₽</span>
+                        </span>
+                      </div>
+            
+                      <form class="products-card__form" action="#">
+                        <label class="sr-only" for="message">поиск товаров на сайте</label>
+            
+                        <input class="products-card__input" id="message" type="number" name="message" value="1" min="0" max="99">
+                      </form>
+            
+                      <button class="products-card__bottom-basket" type="button"
+                        aria-label="кнопка для добавления продукта в корзину"></button>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            
+              <li class="top-products__item">
+                <article class="top-products__card products-card">
+            
+                  <div class="top-products__badges badges">
+                    <span class="badges__item badges__item--new">новинка</span>
+                    <span class="badges__item badges__item--hit badges__item">хит</span>
+                    <span class="badges__item badges__item--sale badges__item--on">-30%</span>
+                  </div>
+            
+                  <button class="top-products__btn" type="button" aria-label="кнопка для добавления продуктов в избранное"></button>
+            
+                  <a class="products-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                    data-caption="My caption" href="#">
+                    <img class="products-card__img" src="images/filters__img/juice.jpg" alt="сок" width="300" height="300">
+                  </a>
+
+                  <div class="promotions-card__availability availability">
+                    <span class="availability__item availability__item--on">
+                      В наличии
+                    </span>
+                    <span class="availability__item availability__item--leftover">
+                      заканчивается
+                    </span>
+                    <span class="availability__item availability__item--ended">
+                      нет в наличии
+                    </span>
+                  </div>
+                  
+                  <span class="promotions-card__bottom-star">4.5</span>
+            
+                  <div class="products-card__info">
+                    <h3 class="products-card__name">
+                      <a class="products-card__link" href="#">Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин
+                        безалкогольн...</a>
+                    </h3>
+            
+                    <div class="products-card__bottom">
+                      <div class="products-card__price price">
+                        <span class="price__item price__item--old price__item--on">299<span>₽</span>
+                        </span>
+            
+                        <span class="price__item">
+                          199 <span>₽</span>
+                        </span>
+                      </div>
+            
+                      <form class="products-card__form" action="#">
+                        <label class="sr-only" for="message">поиск товаров на сайте</label>
+            
+                        <input class="products-card__input" id="message" type="number" name="message" value="1" min="0" max="99">
+                      </form>
+            
+                      <button class="products-card__bottom-basket" type="button"
+                        aria-label="кнопка для добавления продукта в корзину"></button>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            
+              <li class="top-products__item">
+                <article class="top-products__card products-card">
+            
+                  <div class="top-products__badges badges">
+                    <span class="badges__item badges__item--new badges__item--on">новинка</span>
+                    <span class="badges__item badges__item--hit badges__item">хит</span>
+                    <span class="badges__item badges__item--sale">-30%</span>
+                  </div>
+            
+                  <button class="top-products__btn" type="button" aria-label="кнопка для добавления продуктов в избранное"></button>
+            
+                  <a class="products-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                    data-caption="My caption" href="#">
+                    <img class="products-card__img" src="images/filters__img/coffee.jpg" alt="кофе" width="300" height="224">
+                  </a>
+
+                  <div class="promotions-card__availability availability">
+                    <span class="availability__item">
+                      В наличии
+                    </span>
+                    <span class="availability__item availability__item--leftover availability__item--on">
+                      заканчивается
+                    </span>
+                    <span class="availability__item availability__item--ended">
+                      нет в наличии
+                    </span>
+                  </div>
+                  
+                  <span class="promotions-card__bottom-star">4.5</span>
+            
+                  <div class="products-card__info">
+                    <h3 class="products-card__name">
+                      <a class="products-card__link" href="#">Кофе с коноплей органический Caffé Salomoni 250г</a>
+                    </h3>
+            
+                    <div class="products-card__bottom">
+                      <div class="products-card__price price">
+                        <span class="price__item price__item--old"><span>₽</span>
+                        </span>
+            
+                        <span class="price__item">
+                          877 <span>₽</span>
+                        </span>
+                      </div>
+            
+                      <form class="products-card__form" action="#">
+                        <label class="sr-only" for="message">поиск товаров на сайте</label>
+            
+                        <input class="products-card__input" id="message" type="number" name="message" value="1" min="0" max="99">
+                      </form>
+            
+                      <button class="products-card__bottom-basket" type="button"
+                        aria-label="кнопка для добавления продукта в корзину"></button>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            
+              <li class="top-products__item">
+                <article class="top-products__card products-card">
+            
+                  <div class="top-products__badges badges">
+                    <span class="badges__item badges__item--new badges__item--on">новинка</span>
+                    <span class="badges__item badges__item--hit badges__item">хит</span>
+                    <span class="badges__item badges__item--sale">-30%</span>
+                  </div>
+            
+                  <button class="top-products__btn" type="button" aria-label="кнопка для добавления продуктов в избранное"></button>
+            
+                  <a class="products-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                    data-caption="My caption" href="#">
+                    <img class="products-card__img" src="images/filters__img/paprik.jpg" alt="перец сладкий" width="300" height="225">
+                  </a>
+
+                  <div class="promotions-card__availability availability">
+                    <span class="availability__item">
+                      В наличии
+                    </span>
+                    <span class="availability__item availability__item--leftover availability__item--on">
+                      заканчивается
+                    </span>
+                    <span class="availability__item availability__item--ended">
+                      нет в наличии
+                    </span>
+                  </div>
+                  
+                  <span class="promotions-card__bottom-star">4.5</span>
+            
+                  <div class="products-card__info">
+                    <h3 class="products-card__name">
+                      <a class="products-card__link" href="#">Перец оранжевый, 1кг</a>
+                    </h3>
+            
+                    <div class="products-card__bottom">
+                      <div class="products-card__price price">
+                        <span class="price__item price__item--old"><span>₽</span>
+                        </span>
+            
+                        <span class="price__item">
+                          349 <span>₽</span>
+                        </span>
+                      </div>
+            
+                      <form class="products-card__form" action="#">
+                        <label class="sr-only" for="message">поиск товаров на сайте</label>
+            
+                        <input class="products-card__input" id="message" type="number" name="message" value="1" min="0" max="99">
+                      </form>
+            
+                      <button class="products-card__bottom-basket" type="button"
+                        aria-label="кнопка для добавления продукта в корзину"></button>
+                    </div>
+                  </div>
+                </article>
+              </li>
+
+              <li class="top-products__item">
+                <article class="top-products__card products-card">
+              
+                  <div class="top-products__badges badges">
+                    <span class="badges__item badges__item--new">новинка</span>
+                    <span class="badges__item badges__item--hit">хит</span>
+                    <span class="badges__item badges__item--sale">-50%</span>
+                  </div>
+              
+                  <button class="top-products__btn" type="button" aria-label="кнопка для добавления продуктов в избранное"></button>
+              
+                  <a class="products-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                    data-caption="My caption" href="#">
+                    <img class="products-card__img" src="images/filters__img/ketchup.jpg" alt="кетчуп" width="300" height="225">
+                  </a>
+
+                  <div class="promotions-card__availability availability">
+                    <span class="availability__item availability__item--on">
+                      В наличии
+                    </span>
+                    <span class="availability__item availability__item--leftover">
+                      заканчивается
+                    </span>
+                    <span class="availability__item availability__item--ended">
+                      нет в наличии
+                    </span>
+                  </div>
+                  
+                  <span class="promotions-card__bottom-star">4.5</span>
+              
+                  <div class="products-card__info">
+                    <h3 class="products-card__name">
+                      <a class="products-card__link" href="#">Кетчуп томатный детский органический Bio-Zentrale 500мл, 1 шт</a>
+                    </h3>
+              
+                    <div class="products-card__bottom">
+                      <div class="products-card__price price">
+                        <span class="price__item price__item--old"><span>₽</span>
+                        </span>
+              
+                        <span class="price__item">
+                          600 <span>₽</span>
+                        </span>
+                      </div>
+              
+                      <form class="products-card__form" action="#">
+                        <label class="sr-only" for="message">поиск товаров на сайте</label>
+              
+                        <input class="products-card__input" id="message" type="number" name="message" value="1" min="0" max="99">
+                      </form>
+              
+                      <button class="products-card__bottom-basket" type="button"
+                        aria-label="кнопка для добавления продукта в корзину"></button>
+                    </div>
+                  </div>
+                </article>
+              </li>
+
+              <li class="top-products__item">
+                <article class="top-products__card products-card">
+              
+                  <div class="top-products__badges badges">
+                    <span class="badges__item badges__item--new badges__item--on">новинка</span>
+                    <span class="badges__item badges__item--hit">хит</span>
+                    <span class="badges__item badges__item--sale badges__item--on">-50%</span>
+                  </div>
+              
+                  <button class="top-products__btn" type="button" aria-label="кнопка для добавления продуктов в избранное"></button>
+              
+                  <a class="products-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                    data-caption="My caption" href="#">
+                    <img class="products-card__img" src="images/filters__img/pineapple.jpg" alt="ананас" width="300" height="225">
+                  </a>
+
+                  <div class="promotions-card__availability availability">
+                    <span class="availability__item availability__item--on">
+                      В наличии
+                    </span>
+                    <span class="availability__item availability__item--leftover">
+                      заканчивается
+                    </span>
+                    <span class="availability__item availability__item--ended">
+                      нет в наличии
+                    </span>
+                  </div>
+                  
+                  <span class="promotions-card__bottom-star">4.5</span>
+              
+                  <div class="products-card__info">
+                    <h3 class="products-card__name">
+                      <a class="products-card__link" href="#">Ананас, 1кг</a>
+                    </h3>
+              
+                    <div class="products-card__bottom">
+                      <div class="products-card__price price">
+                        <span class="price__item price__item--old price__item--on">
+                          1999 <span>₽</span>
+                        </span>
+              
+                        <span class="price__item">
+                          999 <span>₽</span>
+                        </span>
+                      </div>
+              
+                      <form class="products-card__form" action="#">
+                        <label class="sr-only" for="message">поиск товаров на сайте</label>
+              
+                        <input class="products-card__input" id="message" type="number" name="message" value="1" min="0" max="99">
+                      </form>
+              
+                      <button class="products-card__bottom-basket" type="button"
+                        aria-label="кнопка для добавления продукта в корзину"></button>
+                    </div>
+                  </div>
+                </article>
+              </li>
+
+              <li class="top-products__item">
+                <article class="top-products__card products-card">
+              
+                  <div class="top-products__badges badges">
+                    <span class="badges__item badges__item--new">новинка</span>
+                    <span class="badges__item badges__item--hit badges__item--on">хит</span>
+                    <span class="badges__item badges__item--sale">-50%</span>
+                  </div>
+              
+                  <button class="top-products__btn" type="button" aria-label="кнопка для добавления продуктов в избранное"></button>
+              
+                  <a class="products-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                    data-caption="My caption" href="#">
+                    <img class="products-card__img" src="images/filters__img/carrot.jpg" alt="морковка" width="300" height="225">
+                  </a>
+              
+                  <div class="promotions-card__availability availability">
+                    <span class="availability__item">
+                      В наличии
+                    </span>
+                    <span class="availability__item availability__item--leftover">
+                      заканчивается
+                    </span>
+                    <span class="availability__item availability__item--ended availability__item--on">
+                      нет в наличии
+                    </span>
+                  </div>
+              
+                  <span class="promotions-card__bottom-star">4.5</span>
+              
+                  <div class="products-card__info">
+                    <h3 class="products-card__name">
+                      <a class="products-card__link" href="#">Морковь молодая с бабушкиной грядки, 1кг</a>
+                    </h3>
+              
+                    <div class="products-card__bottom">
+                      <div class="products-card__price price">
+                        <span class="price__item price__item--old"><span>₽</span>
+                        </span>
+              
+                        <span class="price__item">
+                          49 <span>₽</span>
+                        </span>
+                      </div>
+              
+                      <form class="products-card__form" action="#">
+                        <label class="sr-only" for="message">поиск товаров на сайте</label>
+              
+                        <input class="products-card__input" id="message" type="number" name="message" value="1" min="0" max="99">
+                      </form>
+              
+                      <button class="products-card__bottom-basket" type="button"
+                        aria-label="кнопка для добавления продукта в корзину"></button>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              
+              <li class="top-products__item">
+                <article class="top-products__card products-card">
+              
+                  <div class="top-products__badges badges">
+                    <span class="badges__item badges__item--new">новинка</span>
+                    <span class="badges__item badges__item--hit badges__item">хит</span>
+                    <span class="badges__item badges__item--sale badges__item--on">-30%</span>
+                  </div>
+              
+                  <button class="top-products__btn" type="button" aria-label="кнопка для добавления продуктов в избранное"></button>
+              
+                  <a class="products-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                    data-caption="My caption" href="#">
+                    <img class="products-card__img" src="images/filters__img/juice.jpg" alt="сок" width="300" height="300">
+                  </a>
+              
+                  <div class="promotions-card__availability availability">
+                    <span class="availability__item availability__item--on">
+                      В наличии
+                    </span>
+                    <span class="availability__item availability__item--leftover">
+                      заканчивается
+                    </span>
+                    <span class="availability__item availability__item--ended">
+                      нет в наличии
+                    </span>
+                  </div>
+              
+                  <span class="promotions-card__bottom-star">4.5</span>
+              
+                  <div class="products-card__info">
+                    <h3 class="products-card__name">
+                      <a class="products-card__link" href="#">Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин
+                        безалкогольн...</a>
+                    </h3>
+              
+                    <div class="products-card__bottom">
+                      <div class="products-card__price price">
+                        <span class="price__item price__item--old price__item--on">299<span>₽</span>
+                        </span>
+              
+                        <span class="price__item">
+                          199 <span>₽</span>
+                        </span>
+                      </div>
+              
+                      <form class="products-card__form" action="#">
+                        <label class="sr-only" for="message">поиск товаров на сайте</label>
+              
+                        <input class="products-card__input" id="message" type="number" name="message" value="1" min="0" max="99">
+                      </form>
+              
+                      <button class="products-card__bottom-basket" type="button"
+                        aria-label="кнопка для добавления продукта в корзину"></button>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              
+              <li class="top-products__item">
+                <article class="top-products__card products-card">
+              
+                  <div class="top-products__badges badges">
+                    <span class="badges__item badges__item--new badges__item--on">новинка</span>
+                    <span class="badges__item badges__item--hit badges__item">хит</span>
+                    <span class="badges__item badges__item--sale">-30%</span>
+                  </div>
+              
+                  <button class="top-products__btn" type="button" aria-label="кнопка для добавления продуктов в избранное"></button>
+              
+                  <a class="products-card__images" data-fancybox="images" data-width="2048" data-height="1365"
+                    data-caption="My caption" href="#">
+                    <img class="products-card__img" src="images/filters__img/coffee.jpg" alt="кофе" width="300" height="224">
+                  </a>
+              
+                  <div class="promotions-card__availability availability">
+                    <span class="availability__item">
+                      В наличии
+                    </span>
+                    <span class="availability__item availability__item--leftover availability__item--on">
+                      заканчивается
+                    </span>
+                    <span class="availability__item availability__item--ended">
+                      нет в наличии
+                    </span>
+                  </div>
+              
+                  <span class="promotions-card__bottom-star">4.5</span>
+              
+                  <div class="products-card__info">
+                    <h3 class="products-card__name">
+                      <a class="products-card__link" href="#">Кофе с коноплей органический Caffé Salomoni 250г</a>
+                    </h3>
+              
+                    <div class="products-card__bottom">
+                      <div class="products-card__price price">
+                        <span class="price__item price__item--old"><span>₽</span>
+                        </span>
+              
+                        <span class="price__item">
+                          877 <span>₽</span>
+                        </span>
+                      </div>
+              
+                      <form class="products-card__form" action="#">
+                        <label class="sr-only" for="message">поиск товаров на сайте</label>
+              
+                        <input class="products-card__input" id="message" type="number" name="message" value="1" min="0" max="99">
+                      </form>
+              
+                      <button class="products-card__bottom-basket" type="button"
+                        aria-label="кнопка для добавления продукта в корзину"></button>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+
+            <button class="promotions__button btn" type="button">Показать еще</button>
           </div>
         </div>
       </div>

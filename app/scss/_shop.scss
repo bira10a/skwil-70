@@ -16,7 +16,7 @@
 }
 
 .shop-filters {
-  margin-bottom: 200px;
+  margin-right: 32px;
 
   &__item {
     width: 300px;
@@ -232,4 +232,173 @@
   height: 2px;
   background-color: #C4C4C4;
   top: 32px;
+}
+
+.shop-content {
+  &__top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  &__top-item {
+    margin-right: 16px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    &:nth-child(n+3) {
+      .shop-content__top-btn {
+        width: 47px;
+        height: 47px;
+        background-color: $silver-100;
+      }
+    }
+
+    &:nth-child(3) {
+      .shop-content__top-btn {
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 36px;
+          height: 34px;
+          top: 7px;
+          left: 6px;
+          mask: url('../images/sprite.svg#btn-view-grid') center / cover no-repeat;
+          background-color: $green-900;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      .shop-content__top-btn {
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 35px;
+          height: 35px;
+          top: 5px;
+          left: 7px;
+          mask: url('../images/sprite.svg#btn-view-list') center / cover no-repeat;
+          background-color: $green-900;
+        }
+      }
+    }
+  }
+
+  &__top-btn {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $dark-500;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  &__products {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 48px;
+
+    .products-card__img {
+      object-fit: contain;
+    }
+
+    .availability {
+      top: 66%;
+      left: 17px;
+    }
+
+    .promotions-card__bottom-star {
+      top: 66%;
+      right: 16px;
+      position: absolute;
+      line-height: 1;
+    }
+  }
+}
+
+.select {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.new-select {
+  position: relative;
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $dark-500;
+  background-color: $white;
+  border: 1px solid $silver-600;
+  border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
+  padding: 14px 42px 14px 11px;
+  transition: border-color linear 0.2s;
+
+  &__list {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    border: 1px solid $silver-600;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    background: $white;
+    user-select: none;
+    border-top: 1px solid $dark-500;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid $silver-600;
+    border-right: 1px solid $silver-600;
+    transform: rotate(135deg);
+    top: 16px;
+    right: 17px;
+    transition: transform linear 0.2s;
+  }
+}
+
+.new-select.on {
+  border: 1px solid $dark-500;
+  border-radius: 3px 3px 0 0;
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.new-select__list.on {
+  display: block;
+}
+
+.new-select__item span {
+  display: block;
+  padding: 14px 5px 14px 11px;
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $dark-500;
+  transition: color linear 0.2s;
+
+  &:hover {
+    color: $green-900;
+  }
 }
