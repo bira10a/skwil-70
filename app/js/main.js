@@ -114,6 +114,18 @@ $(function(){
     $(this).addClass('shop-content__top-btn--active');
   })
 
+  $('.shop-content__top-btn-list').on('click', function(){
+    $('.shop-content__products').addClass('shop-content__products--list');
+  });
+
+  $('.shop-content__top-btn-grid').on('click', function () {
+    $('.shop-content__products').removeClass('shop-content__products--list');
+  });
+
+  $('.shop-content__top-btnFilter').on('click', function () {
+    $('.shop-filters').toggleClass('shop-filters--active');
+  });
+
 
   // слайдер
   

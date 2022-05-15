@@ -520,6 +520,10 @@
           <div class="shop__content shop-content">
             <ul class="shop-content__top">
               <li class="shop-content__top-item">
+                <button class="shop-content__top-btnFilter" type="button"></button>
+              </li>
+
+              <li class="shop-content__top-item">
                 <select class="select">
                   <option disabled>По названию</option>
                   <option>По названию</option>
@@ -542,11 +546,11 @@
               </li>
 
               <li class="shop-content__top-item">
-                <button class="shop-content__top-btn" type="button"></button>
+                <button class="shop-content__top-btn shop-content__top-btn-list" type="button"></button>
               </li>
 
               <li class="shop-content__top-item">
-                <button class="shop-content__top-btn" type="button"></button>
+                <button class="shop-content__top-btn shop-content__top-btn--active shop-content__top-btn-grid" type="button"></button>
               </li>
             </ul>
 
@@ -1285,6 +1289,32 @@
         </div>
       </div>
     </section>
+
+    <section class="advantages catalog-advantages">
+      <div class="container">
+        <h2 class="sr-only">Преимущества заказа продуктов у нас</h2>
+    
+        <ul class="advantages__items">
+          <li class="advantages__item advantages__item--scooter">
+            <span class="advantages__title">Бесплатная доставка</span>
+    
+            <span class="advantages__text">Для заказов на сумму от 500 ₽</span>
+          </li>
+    
+          <li class="advantages__item advantages__item--product">
+            <span class="advantages__title">Возврат товара</span>
+    
+            <span class="advantages__text">Если товары были испорчены</span>
+          </li>
+    
+          <li class="advantages__item advantages__item--24-hours">
+            <span class="advantages__title">Поддержка 24/7</span>
+    
+            <span class="advantages__text">Лучшие операторы</span>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -1293,70 +1323,70 @@
         <img class="logo__img" src="images/logo.svg" alt="логотип" width="200" height="60">
       </a>
     </div>
-      
+  
     <div class="footer__top footer-top">
       <div class="container footer-top__container">
         <form class="footer__form footer-form" action="#">
           <h2 class="footer-form__title">Следите за нашими акциями</h2>
-          
+  
           <label class="sr-only" for="email">введите свой емэйл</label>
-        
+  
           <input class="footer-form__input" id="email" type="email" placeholder="email@email.com" name="email"
             required></input>
-        
+  
           <button class="footer-form__btn" type="submit">подписаться</button>
         </form>
-        
+  
         <ul class="footer__list">
           <li class="footer__item">
             <a class="footer__link" href="#">
               О нас
             </a>
           </li>
-        
+  
           <li class="footer__item">
             <a class="footer__link" href="#">
               Контакты
             </a>
           </li>
-        
+  
           <li class="footer__item">
             <a class="footer__link" href="#">
               Публичная оферта
             </a>
           </li>
-        
+  
           <li class="footer__item">
             <a class="footer__link" href="#">
               Оплата и доставка
             </a>
           </li>
-        
+  
           <li class="footer__item">
             <a class="footer__link" href="#">
               Вакансии
             </a>
           </li>
-        
+  
           <li class="footer__item">
             <a class="footer__link" href="#">
               Акции
             </a>
           </li>
-        
+  
           <li class="footer__item">
             <a class="footer__link" href="#">
               Отзывы
             </a>
           </li>
-        
+  
           <li class="footer__item">
             <a class="footer__link" href="#">
               Новости
             </a>
           </li>
         </ul>
-
+  
         <address class="footer__address footer-address">
           <ul class="footer-address__items">
             <li class="footer-address__item">
@@ -1366,37 +1396,44 @@
               <a class="footer-address__link" href="#">Санкт-Петербург, Ул. Ленина, 1</a>
             </li>
           </ul>
-        
+  
           <ul class="footer-address__list">
             <li class="footer-address__list-link">
-              <a class="footer-address__networks" href="https://www.facebook.com/account" target="_blank" aria-label="ссылка на нашу страничку в facebook">
-                <span class="footer-address__networks-icon" style="-webkit-mask-image: url('images/sprite.svg#icon-facebook'); mask-image: url('images/sprite.svg#icon-facebook');"></span>
+              <a class="footer-address__networks" href="https://www.facebook.com/account" target="_blank"
+                aria-label="ссылка на нашу страничку в facebook">
+                <span class="footer-address__networks-icon"
+                  style="-webkit-mask-image: url('images/sprite.svg#icon-facebook'); mask-image: url('images/sprite.svg#icon-facebook');"></span>
               </a>
             </li>
-        
+  
             <li class="footer-address__list-link">
-              <a class="footer-address__networks" href="https://youtube.com/account" target="_blank" aria-label="ссылка на нашу страничку в youtube">
-                <span class="footer-address__networks-icon" style="-webkit-mask-image: url('images/sprite.svg#youtube'); mask-image: url('images/sprite.svg#youtube');"></span>
+              <a class="footer-address__networks" href="https://youtube.com/account" target="_blank"
+                aria-label="ссылка на нашу страничку в youtube">
+                <span class="footer-address__networks-icon"
+                  style="-webkit-mask-image: url('images/sprite.svg#youtube'); mask-image: url('images/sprite.svg#youtube');"></span>
               </a>
             </li>
-        
+  
             <li class="footer-address__list-link">
-              <a class="footer-address__networks" href="https://www.telegram.com/account" target="_blank" aria-label="ссылка на нашу страничку в telegram">
-                <span class="footer-address__networks-icon" style="-webkit-mask-image: url('images/sprite.svg#telegram'); mask-image: url('images/sprite.svg#telegram');"></span>
+              <a class="footer-address__networks" href="https://www.telegram.com/account" target="_blank"
+                aria-label="ссылка на нашу страничку в telegram">
+                <span class="footer-address__networks-icon"
+                  style="-webkit-mask-image: url('images/sprite.svg#telegram'); mask-image: url('images/sprite.svg#telegram');"></span>
               </a>
             </li>
-        
+  
             <li class="footer-address__list-link">
               <a class="footer-address__networks" href="https://www.instagram.com/account" target="_blank"
                 aria-label="ссылка на нашу страничку в instagram">
-                <span class="footer-address__networks-icon" style="-webkit-mask-image: url('images/sprite.svg#instagram'); mask-image: url('images/sprite.svg#instagram');"></span>
+                <span class="footer-address__networks-icon"
+                  style="-webkit-mask-image: url('images/sprite.svg#instagram'); mask-image: url('images/sprite.svg#instagram');"></span>
               </a>
             </li>
           </ul>
         </address>
       </div>
     </div>
-
+  
     <div class="container">
       <div class="footer__bottom">
         <a class="footer__bottom-copy" href="#">
@@ -1404,11 +1441,13 @@
         </a>
         <ul class="footer__bottom-accept">
           <li class="footer__bottom-item">
-            <img class="footer__bottom-img" src="images/visa.svg" alt="принимаем оплату по карте VISA" width="93" height="29">
+            <img class="footer__bottom-img" src="images/visa.svg" alt="принимаем оплату по карте VISA" width="93"
+              height="29">
           </li>
-
+  
           <li class="footer__bottom-item">
-            <img class="footer__bottom-img" src="images/mastercard.svg" alt="принимаем оплату по карте MasterCard" width="49" height="29">
+            <img class="footer__bottom-img" src="images/mastercard.svg" alt="принимаем оплату по карте MasterCard"
+              width="49" height="29">
           </li>
         </ul>
       </div>
