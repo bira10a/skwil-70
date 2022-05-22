@@ -28,6 +28,10 @@
 .shop-filters {
   margin-right: 32px;
 
+  &__button {
+    display: none;
+  }
+
   &__item {
     width: 300px;
     border: 1px solid $silver-600;
@@ -121,6 +125,23 @@
     }
   }
 
+  &__link {
+    outline: transparent;
+    transition: box-shadow linear 0.2s, border-radius linear 0.2s, color linear 0.2s, border linear 0.2s, padding linear 0.2s;
+    
+    &:focus {
+      box-shadow: 0 0 0 3px #E0EDCF;
+    }
+  
+    &:hover {
+      color: #63A60E;
+    }
+  
+    &:active {
+      color: #C1C1C1;
+    }
+  }
+
   &__label {
     display: flex;
     justify-content: flex-start;
@@ -203,17 +224,73 @@
   }
 
   @include r(992) {
+    background-color: $white;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 4;
     transform: translateY(-200%);
     transition: transform linear 0.4s;
+    padding-right: 21px;
+    margin-right: 0;
+
+    &__button {
+      display: block;
+      position: relative;
+      width: 18px;
+      height: 18px;
+      border-radius: 3px;
+      outline: transparent;
+      margin-top: 29px;
+      margin-right: 11px;
+      margin-bottom: 29px;
+      margin-left: auto;
+      transition: box-shadow linear 0.2s, background-color linear 0.2s;
+    
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: calc(50% - 1px);
+        width: 100%;
+        height: 1px;
+        background-color: $dark-000;
+        transition: background-color linear 0.2s;
+      }
+    
+      &::before {
+        transform: rotate(45deg);
+        left: 0;
+      }
+    
+      &::after {
+        transform: rotate(-45deg);
+        right: 0;
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 3px #EFF6E7;
+      }
+
+      &:hover {
+        background-color: $green-100;
+      
+        &::before,
+        &::after {
+          background-color: $green-900;
+        }
+      }
+    }
   }
 }
 
 .shop-filters--active {
   transform: translateY(0);
+  z-index: 201;
+  height: 100vh;
+  overflow: auto;
+  padding-bottom: 20px;
 }
 
 .irs--round {

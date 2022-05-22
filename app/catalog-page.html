@@ -355,7 +355,9 @@
         <h1 class="shop__title">Каталог товаров</h1>
 
         <div class="shop__inner">
-          <ul class="shop__filters shop-filters">
+          <ul class="shop__filters shop-filters" onclick="offOverlay()">
+            <button class="shop-filters__button" type="button"></button>
+            
             <li class="shop-filters__item">
               <button class="shop-filters__btn" type="button">
                 Категории
@@ -520,7 +522,7 @@
           <div class="shop__content shop-content">
             <ul class="shop-content__top">
               <li class="shop-content__top-item">
-                <button class="shop-content__top-btnFilter" type="button"></button>
+                <button class="shop-content__top-btnFilter" type="button" onclick="onOverlay()"></button>
               </li>
 
               <li class="shop-content__top-item">
@@ -1453,6 +1455,8 @@
       </div>
     </div>
   </footer>
+
+  <div id="overlay" onclick="offOverlay()"></div>
 
   <script src="js/main.min.js"></script>
 </body>

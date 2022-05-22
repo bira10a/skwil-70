@@ -122,7 +122,7 @@ $(function(){
     $('.shop-content__products').removeClass('shop-content__products--list');
   });
 
-  $('.shop-content__top-btnFilter').on('click', function () {
+  $('.shop-content__top-btnFilter, .shop-filters__button').on('click', function () {
     $('.shop-filters').toggleClass('shop-filters--active');
   });
 
@@ -154,6 +154,8 @@ $(function(){
 
     
 })
+
+
 
 // работа с селект в catalog-page.html
 
@@ -211,3 +213,30 @@ $('.select').each(function () {
     }
   });
 }); 
+
+
+// активация overlay...клик установлен в html
+function onOverlay() {
+  document.getElementById("overlay").style.display = "block";
+  document.querySelector(".menu-mobile").style.zIndex = "201";
+  document.querySelector(".basket").style.zIndex = "201";
+};
+
+function offOverlay() {
+  document.getElementById("overlay").style.display = "none";
+};
+
+let headerMobileBtn = document.querySelector('.header-top__btn-mobile');
+headerMobileBtn.addEventListener('click', onOverlay);
+
+let menuMobile = document.querySelector('.menu-mobile');
+menuMobile.addEventListener('click', offOverlay);
+
+let userNavLinkBasket = document.querySelector('.user-nav__link-basket');
+userNavLinkBasket.addEventListener('click', onOverlay);
+
+let basketExit = document.querySelector('.basket__exit');
+basketExit.addEventListener('click', offOverlay);
+
+let basketBtn = document.querySelector('.basket__bottom-btn');
+basketBtn.addEventListener('click', offOverlay);
