@@ -1,0 +1,308 @@
+.product {
+  padding: 48px 0 63px 0;
+
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__wrapper-slider {
+    padding: 66px 104px;
+    background-color: $white;
+    border: 1px solid $silver-600;
+    border-radius: 4px;
+    margin-right: 30px;
+  }
+
+  &__inner {
+    margin-top: 22px;
+    width: 100%;
+  }
+
+  &__title {
+    font-family: 'Ruda-SemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $dark-900;
+    margin-bottom: 18px;
+  }
+
+  &__badges {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 4px;
+  }
+
+  &__badges-item {
+    display: none;
+    font-family: "OpenSans-Bold", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white;
+    padding: 6px 8px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+  }
+
+  &__badges-item--on {
+    display: inline-block;
+  }
+
+  &__badges-item--new {
+    background-color: $green-900;
+  }
+
+  &__badges-item--hit {
+    background-color: $orange-900;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__code {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $silver-600;
+    padding: 4px 5px 3px 5px;
+    background-color: $silver-100;
+    border-radius: 3px;
+  }
+
+  &__availability {
+    font-family: "OpenSans-SemiBold", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    color: $green-900;
+    text-transform: uppercase;
+    margin-left: auto;
+  }
+
+  &__availability-item {
+    display: none;
+  }
+
+  &__availability--on {
+    display: block;
+  }
+
+  &__availability--leftover {
+    color: $silver-600;
+  }
+
+  &__availability--ended {
+    color: $red-900;
+  }
+
+  &__price {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 59px;
+  }
+
+  &__price-item {
+    font-family: "OpenSans-Bold", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    color: $green-900;
+    margin-right: 18px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__price-item--old {
+    font-size: 20px;
+    color: $silver-600;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid $silver-600;
+      width: 100%;
+      height: 50%;
+      transform: rotate(-15deg);
+    }
+  }
+
+  &__counter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  &__form {
+    margin-left: 44px;
+    margin-right: 62px;
+  }
+
+  &__input .jq-number__spin {
+    width: 44px;
+    height: 44px;
+
+    &::after {
+      width: 29px;
+      top: 50%;
+      left: 7px;
+    }
+  }
+
+  &__input .jq-number__spin.minus {
+    left: -44px;
+  }
+
+  &__input .jq-number__spin.plus {
+    right: -44px;
+
+    &::before {
+      height: 29px;
+      top: 8px;
+      left: 20px;
+    }
+  }
+
+  &__input .jq-number__field {
+    width: 70px;
+  }
+
+  &__input .jq-number__field input {
+    height: 44px;
+  }
+
+  &__btn {
+    font-family: "OpenSans-SemiBold", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    color: $white;
+    text-transform: uppercase;
+    padding: 14px 12px 14px 49px;
+    background-color: $green-900;
+    border-radius: 3px;
+    position: relative;
+    outline: transparent;
+    transition: box-shadow linear 0.2s, background-color linear 0.2s;
+
+    &::before {
+      @include pseudo;
+      width: 24px;
+      height: 23px;
+      top: 11px;
+      left: 10px;
+      mask: url("../images/sprite.svg#icon-cart") center/cover no-repeat;
+      background-color: $white;
+      transition: background-color linear 0.2s;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 4px #E0EDCF;
+    }
+
+    &:hover {
+      background-color: #4D800C;
+    }
+
+    &:active {
+      box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__button {
+    margin-left: auto;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 44px;
+      height: 39px;
+      mask: url("../images/sprite.svg#icon-heart") center/cover no-repeat;
+      background-color: #C1C1C1;
+      transition: background-color linear 0.2s;
+    }
+
+    &:hover {
+      &::before {
+        background-color: $yellow-900;
+      }
+    }
+
+    &:active {
+      &::before {
+        background-color:rgba(255, 184, 0, 0.5);
+      }
+    }
+  }
+
+  &__delivery {
+    font-family: 'Ruda-SemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $dark-900;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid $silver-600;
+    display: block;
+  }
+
+  &__delivery-info {
+    margin-bottom: 18px;
+
+    span {
+      font-family: 'OpenSans-Regular', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.6;
+      letter-spacing: 0.03em;
+      color: $dark-500;
+      display: block;
+    }
+  }
+
+  &__delivery-link {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $green-900;
+  }
+}
+
+.product-slaider {
+  width: 420px;
+
+  &__item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 420px;
+  }
+
+  .slick-prev {
+    left: -83px;
+  }
+
+  .slick-next {
+    right: -83px;
+  }
+}

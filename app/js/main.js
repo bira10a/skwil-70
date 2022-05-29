@@ -12,15 +12,6 @@ $(function(){
   var to = 0;
 
   $('.shop-filters__input-price').ionRangeSlider({
-    // type: "double",
-    // onStart: function (data){
-    //   $('.shop-filters__input-from').text(data.from);
-    //   $('.shop-filters__input-to').text(data.to);
-    // },
-    // onChange: function (data){
-    //   $('.shop-filters__input-from').text(data.from);
-    //   $('.shop-filters__input-to').text(data.to);
-    // },
     skin: "round",
     type: "double",
     min: min,
@@ -85,6 +76,7 @@ $(function(){
   // кастом инпут, добавляем + - как нам надо...
   $('.products-card__input').styler();
   $('.basket-card__input').styler();
+  $('.product__input').styler();
   
 
   // изменение и добавление новых классов при действиях (клик например)
@@ -136,7 +128,12 @@ $(function(){
     autoplay: true,
     autoplaySpead: 2000,
     dots: true,
-  })
+  });
+
+  $('.product-slaider').slick({
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+  });
 
   // var mixer = mixitup('.top-products__content'); для одного слайдера на странице, тогда div container не нужен
 
