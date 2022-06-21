@@ -1,5 +1,34 @@
 $(function(){
 
+  $(".comments__star, .product__star").rateYo({
+    starWidth: "16px",
+    starHeight: "15px",
+    normalFill: "rgba(193, 193, 193, 0.3)",
+    ratedFill: "#FFB800",
+    spacing: "6px",
+    readOnly: true,
+  }); 
+  
+  $(".comments__rating-star").rateYo({
+    starWidth: "16px",
+    starHeight: "15px",
+    normalFill: "#C1C1C1",
+    ratedFill: "#FFB800",
+    spacing: "6px",
+  });
+
+
+  // Табсы
+
+  $('.products-tabs__top-link').on('click', function(e){
+    e.preventDefault();
+    $('.products-tabs__top-link').removeClass('products-tabs__top-link--active');
+    $(this).addClass('products-tabs__top-link--active');
+
+    $('.products-tabs__content-item').removeClass('products-tabs__content-item--active');
+    $($(this).attr('href')).addClass('products-tabs__content-item--active');
+  })
+
   // изменение цены в инпуте и с помощью ползунка
 
   var $range = $(".shop-filters__input-price");
@@ -134,6 +163,8 @@ $(function(){
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
   });
+  
+
 
   // var mixer = mixitup('.top-products__content'); для одного слайдера на странице, тогда div container не нужен
 
@@ -237,3 +268,76 @@ basketExit.addEventListener('click', offOverlay);
 
 let basketBtn = document.querySelector('.basket__bottom-btn');
 basketBtn.addEventListener('click', offOverlay);
+
+
+
+
+
+
+
+let sliders = document.querySelectorAll('.slider');
+// sliders - список всех элементов с классом class="slider"
+// sliders[0] — первый элемент, sliders[1] — второй, sliders[i] — i-тый.
+
+for (let i = 0; i < sliders.length; i++) {
+  // Перебирает все, вызывает функцию для каждого.
+  init_slider(sliders[i]);
+}
+
+function init_slider(slider) {
+  // Значение slider: Очередной sliders[i], переданный при вызове функции.
+
+  let slide = slider.querySelectorAll('.slide');
+  // Вместо document.query... Получается список всех class="slide"
+  // которые находятся где-то внутри текущего элемента slider.
+
+  let next = slider.querySelector('.next');
+  // Кнопка next внутри этого slider.
+
+  let i = 0;
+  // Номер текущего "открытого" слайда.
+
+  next.addEventListener('click', function () {
+    slide[i].classList.remove('block');
+    // slide[i] - открытый слайд. Скрываем.
+
+    i = (i + 1) % slide.length; // (*1)
+
+    slide[i].classList.add('block');
+    // slide[i] - следующий слайд. Показываем.
+  });
+}
+
+
+
+
+
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 30,
+  autoHeight: true,
+  allowTouchMove: false,
+  freeMode: true,
+  simulateTouch: false,
+  loop: false,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper__button-next',
+    prevEl: '.swiper__button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
