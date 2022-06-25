@@ -163,6 +163,12 @@ $(function(){
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
   });
+
+  $('.product__popup-list').slick({
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    dots: true,
+  });
   
 
 
@@ -320,7 +326,7 @@ const swiper = new Swiper('.swiper', {
   slidesPerView: 4,
   spaceBetween: 30,
   autoHeight: true,
-  allowTouchMove: false,
+  allowTouchMove: true,
   freeMode: true,
   simulateTouch: false,
   loop: false,
@@ -328,6 +334,7 @@ const swiper = new Swiper('.swiper', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
   // Navigation arrows
@@ -340,4 +347,20 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1330: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  }
 });

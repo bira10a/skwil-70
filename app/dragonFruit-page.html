@@ -360,15 +360,19 @@
 
     <section class="product">
       <div class="product__container container">
+        <h2 class="product__title-mobile">Питахайя красная с белой мякотью</h2>
         <div class="product__wrapper-slider">
           <ul class="product__slaider product-slaider">
             <li class="product-slaider__item" style="background-image: url('images/product/dragonFruit.jpg');"> 
+              <a href="#popup1"></a>
             </li>
   
             <li class="product-slaider__item" style="background-image: url('images/product/dragonFruit.jpg');"> 
+              <a href="#popup1"></a>
             </li>
 
             <li class="product-slaider__item" style="background-image: url('images/product/dragonFruit.jpg');">
+              <a href="#popup1"></a>
             </li>
           </ul>
         </div>
@@ -421,6 +425,17 @@
           </div>
 
           <a class="product__delivery-link" href="#">Подробнее</a>
+        </div>
+      </div>
+
+      <div class="product__popup" id="popup1">
+        <div class="product__popup-inner">
+          <a class="product__popup-btn" href="#"></a>
+          <ul class="product__popup-list">
+            <li class="product__popup-item" style="background-image: url('images/product/dragonFruit.jpg');"></li>
+            <li class="product__popup-item" style="background-image: url('images/product/dragonFruit.jpg');"></li>
+            <li class="product__popup-item" style="background-image: url('images/product/dragonFruit.jpg');"></li>
+          </ul>
         </div>
       </div>
 
@@ -529,17 +544,16 @@
                   <input class="comments-form__input" type="email" name="email" placeholder="youremail@mail.com" required>
                 </div>
               </div>
-            </form>
 
-            <form class="comments__checkbox" action="#">
               <label class="comments__checkbox-label">
                 <input class="comments__checkbox-input" type="checkbox">
                 <div class="comments__checkbox-span"></div>
-                <div class="comments__checkbox-text">Сохранить моё имя, email и адрес сайта в этом браузере для последующих моих комментариев.</div>
+                <div class="comments__checkbox-text">Сохранить моё имя, email и адрес сайта в этом браузере для последующих моих
+                  комментариев.</div>
               </label>
+              
+              <button class="comments__btn btn" type="submit">Оставить отзыв</button>
             </form>
-
-            <button class="comments__btn btn" type="submit">Оставить отзыв</button>
           </li>
         </ul>
       </div>
@@ -1020,8 +1034,8 @@
           </ul>
           <button class="swiper__button-prev"></button>
           <button class="swiper__button-next"></button>
+          <div class="swiper-pagination"></div>
         </div>
-
       </div>
     </section>
   </main>
