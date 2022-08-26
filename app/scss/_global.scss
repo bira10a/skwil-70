@@ -3,13 +3,97 @@ body {
   height: 100%;
 }
 
+// НАСТРОЙКИ ===============================================================================================================================================================================================================================================================================================
+// Минимальная ширина страницы
+$minWidth: 320;
+// Ширина полотна (макета)
+$maxWidth: 1920;
+// Ширина ограничивающего контейнера (0 = нет ограничения)
+$maxWidthContainer: 1170;
+// Общий отступ у контейнера
+// (30 = по 15px слева и справа, 0 = нет отступа)
+$containerPadding: 30;
+
+// Ширина срабатывания первого брейкпоинта
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Брейк-поинты
+$pc: em($containerWidth); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$tablet: em(991.98); // Планшеты, некоторые телефоны в горизонтальном положении
+$mobile: em(767.98); // Телефоны L
+$mobileSmall: em(479.98); // Телефоны S
+
+// Тип адаптива:
+// 1 = отзывчивость (у контейнера нет брейкпоинтов),
+// 2 = по брейк-поинтам (контейнер меняет свою ширину по брейк-поинтам)
+$responsiveType: 1;
+
+// Ограничивающий контейнер ======================================================================================================================================================================================================================
+
+/*
+(i) Стили будут применяться ко 
+всем классам содержащим *__container
+Например header__container, main__container и т.д.
+Снипет (HTML): cnt
+*/
+@if ($responsiveType==1) {
+
+  // Отзывчивая
+  [class*="__container"] {
+    @if ($maxWidthContainer>0) {
+      max-width: rem($maxWidthContainer);
+      box-sizing: content-box;
+      margin: 0 auto;
+    }
+
+    @if ($containerPadding>0) {
+      padding: 0 rem(math.div($containerPadding, 2));
+    }
+  }
+}
+
+@else {
+
+  // По брейк-поинтам
+  [class*="__container"] {
+    margin: 0 auto;
+
+    @if ($maxWidthContainer>0) {
+      max-width: rem($maxWidthContainer);
+      box-sizing: content-box;
+    }
+
+    @else {
+      @if ($containerPadding>0) {
+        padding: 0 rem(math.div($containerPadding, 2));
+      }
+    }
+
+    @media (max-width: $pc) {
+      max-width: rem(970);
+    }
+
+    @media (max-width: $tablet) {
+      max-width: rem(750);
+    }
+
+    @media (max-width: $mobile) {
+      max-width: none;
+
+      @if ($containerPadding>0 and $maxWidthContainer>0) {
+        padding: 0 rem(math.div($containerPadding, 2));
+      }
+    }
+  }
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.4;
-  color: $dark-900;
-  background-color: $white;
+  // font-family: 'Open Sans', sans-serif;
+  // font-weight: 600;
+  // font-size: 14px;
+  // line-height: 1.4;
+  // color: $dark-900;
+  background-color: $default;
   display: flex;
   flex-direction: column;
 }
@@ -23,19 +107,19 @@ body {
 }
 
 .container {
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 0 15px;
+  // max-width: 1320px;
+  // margin: 0 auto;
+  // padding: 0 15px;
 }
 
 .btn {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'OpenSans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
   letter-spacing: 0.03em;
   border-radius: 6px;
-  color: $white;
+  color: $accent;
   background-color: #63A60E;
   padding: 12px 24px;
   outline: transparent;
@@ -59,25 +143,6 @@ body {
     }
 }
 
-@mixin line-clamp($lines: 1) {
-  @if $lines <=1 {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  } @else {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: $lines;
-    -webkit-box-orient: vertical;
-  }
-}
-
-@mixin pseudo($display: block, $pos: absolute, $content: ''){
-  content: $content;
-  display: $display;
-  position: $pos;
-}
 
 .sr-only {
   position: absolute;
@@ -93,14 +158,14 @@ body {
 }
 
 .title {
-  @extend %ruda-600;
-  line-height: 1.4;
-  letter-spacing: 0.03em;
-  color: $dark-900;
-  text-align: center;
-  margin-bottom: 30px;
-  padding-top: 72px;
-  text-transform: uppercase;
+  // @extend %ruda-600;
+  // line-height: 1.4;
+  // letter-spacing: 0.03em;
+  // color: $dark-900;
+  // text-align: center;
+  // margin-bottom: 30px;
+  // padding-top: 72px;
+  // text-transform: uppercase;
 }
 
 #overlay {
@@ -122,4 +187,23 @@ body {
   /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer;
   /* Add a pointer on hover */
+}
+
+
+
+//======================================================================================================================================================== для реализации бургера, вешаем класс на body
+
+.lock {
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }

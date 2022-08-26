@@ -1,16 +1,6 @@
-$green-900:  #63A60F;
-$green-200:  #E0EDCF;
-$green-100:  #EFF6E7;
-$dark-900:   #121212;
-$dark-800:   #31352B;
-$dark-500:   #505050;
-$dark-000:   #000000;
-$red-900:    #CF3E3B;
-$orange-900: #FF7A00;
-$yellow-900: #FFB800;
-$silver-600: #C1C1C1;
-$silver-100: #F6F6F6;
-$white:      #FFFFFF;
+$default: #FFFFFF;
+$accent: #FFB548;
+
 
 @mixin r($width) {
   @media (max-width: #{$width}px) {
@@ -18,6 +8,28 @@ $white:      #FFFFFF;
    }
 }
 
+@mixin line-clamp($lines: 1) {
+  @if $lines <=1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  @else {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+ 
 %checkbox-hidden {
   width: 1px;
   height: 1px;
@@ -26,67 +38,18 @@ $white:      #FFFFFF;
   position: absolute;
 }
 
-%flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+// %opensans-300 {
+//   font-family: 'OpenSans-Light', sans-serif;
+//   font-weight: 300;
+// }
 
-%flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-wrap: wrap;
+// %ruda-400 {
+//   font-family: 'Ruda-Regular', sans-serif;
+//   font-weight: 400;
+// }
 
-}
-
-%positioning-icons {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-%positioning-img {
+%bg-img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-%opensans-300 {
-  font-family: 'OpenSans-Light', sans-serif;
-  font-weight: 300;
-}
-
-%opensans-400 {
-  font-family: 'OpenSans-Regular', sans-serif;
-  font-weight: 400;
-}
-
-%opensans-600 {
-  font-family: 'OpenSans-SemiBold', sans-serif;
-  font-weight: 600;
-}
-
-%opensans-700 {
-  font-family: 'OpenSans-Bold', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.4;
-}
-
-%ruda-400 {
-  font-family: 'Ruda-Regular', sans-serif;
-  font-weight: 400;
-}
-
-%ruda-600 {
-  font-family: 'Ruda-SemiBold', sans-serif;
-  font-weight: 600;
-  font-size: 32px;
-}
-
-%ruda-700 {
-  font-family: 'Ruda-Bold', sans-serif;
-  font-weight: 700;
-  font-size: 60px;
 }

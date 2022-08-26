@@ -1,20 +1,12 @@
+@use 'sass:math';
 @import 'vars';
 @import 'fonst';
 @import 'reset';
+@import 'mixins';
 @import 'global';
-@import 'libs';
+// @import 'tabs';
+// @import 'libs';
 @import 'header';
-@import 'top-slider';
-@import 'advantages';
-@import 'top-products';
-@import 'categories';
-@import 'promotions';
-@import 'our-news';
 @import 'footer';
 
-@import 'breadcrumbs';
-@import 'shop';
-@import 'product';
-
-
-@import 'media';
+// @import 'breadcrumbs';
